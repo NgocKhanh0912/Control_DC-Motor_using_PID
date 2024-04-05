@@ -1,0 +1,544 @@
+boot:0x13 (SPI_FAST_FLA��A%�Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 11 2024 23:08:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a794h ( 42900) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001a7bc vaddr=3ffb0000 size=022ach (  8876) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001ca70 vaddr=40080000 size=035a8h ( 13736) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15e60h ( 89696) map[0m
+[0;32mI (164) esp_image: segment 4: paddr=00035e88 vaddr=400835a8 size=09570h ( 38256) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (186) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (206) cpu_start: Application information:[0m
+[0;32mI (209) cpu_start: Project name:     PID_Control_DC-Motor[0m
+[0;32mI (216) cpu_start: App version:      1[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 11 2024 23:07:36[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  878c8a0b5...[0m
+[0;32mI (231) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2BD8 len 0002D428 (181 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB18 len 000134E8 (77 KiB): IRAM[0m
+[0;32mI (291) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (298) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (312) main_task: Started on CPU0[0m
+[0;32mI (322) main_task: Calling app_main()[0m
+[0;32mI (322) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (322) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Error 5000.00, Integral: 0.00, Derivate: inf, ControlSignal: nan
+Setpoint: 5000, Position: 0
+[0;32mI (342) main_task: Returned from app_main()[0m
+Error 4924.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 76
+Error 4798.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 203
+Error 4666.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 334
+Error 4534.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 466
+Error 4401.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 599
+Error 4270.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 731
+Error 4137.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 863
+Error 4001.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 999
+Error 3869.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 1131
+Error 3736.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 1264
+Error 3604.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 1397
+Error 3471.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 1530
+Error 3338.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 1663
+Error 3204.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 1797
+Error 3071.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 1930
+Error 2937.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 2063
+Error 2805.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 2195
+Error 2671.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 2329
+Error 2535.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 2465
+Error 2402.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 2598
+Error 2269.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 2731
+Error 2136.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 2864
+Error 2003.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 2997
+Error 1870.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 3130
+Error 1737.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 3264
+Error 1604.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 3397
+Error 1470.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 3530
+Error 1337.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 3663
+Error 1204.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 3796
+Error 1071.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 3929
+Error 938.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 4063
+Error 804.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 4196
+Error 671.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 4329
+Error 538.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 4463
+Error 404.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 4596
+Error 271.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 4729
+Error 138.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 4862
+Error 4.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 4996
+Error -129.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 5129
+Error -262.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 5263
+Error -395.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 5395
+Error -527.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 5527
+Error -660.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 5660
+Error -793.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 5793
+Error -926.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 5927
+Error -1060.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 6060
+Error -1194.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 6194
+Error -1327.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 6327
+Error -1460.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 6461
+Error -1594.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 6594
+Error -1727.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 6728
+Error -1861.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 6861
+Error -1994.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 6995
+Error -2128.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 7128
+Error -2261.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 7261
+Error -2394.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 7394
+Error -2526.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 7526
+Error -2657.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 7658
+Error -2790.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 7790
+Error -2923.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 7924
+Error -3054.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 8054
+Error -3187.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 8188
+Error -3320.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 8320
+Error -3454.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 8454
+Error -3587.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 8587
+Error -3721.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 8721
+Error -3853.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 8854
+Error -3986.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 8986
+Error -4119.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 9119
+Error -4253.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 9253
+Error -4385.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 9386
+Error -4518.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 9518
+Error -4651.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 9651
+Error -4784.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 9784
+Error -4918.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 9918
+Error -5050.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 10051
+Error -5184.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 10184
+Error -5317.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 10317
+Error -5449.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 10449
+Error -5581.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 10581
+Error -5714.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 10714
+Error -5843.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 10843
+Error -5976.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 10976
+Error -6106.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 11107
+Error -6237.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 11238
+Error -6369.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 11370
+Error -6502.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 11502
+Error -6634.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 11634
+Error -6768.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 11768
+Error -6902.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 11902
+Error -7034.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 12034
+Error -7168.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 12168
+Error -7302.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 12302
+Error -7435.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 12435
+Error -7568.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 12568
+Error -7703.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 12703
+Error -7837.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 12837
+Error -7971.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 12971
+Error -8105.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 13105
+Error -8239.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 13239
+Error -8373.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 13373
+Error -8506.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 13506
+Error -8640.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 13640
+Error -8773.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 13773
+Error -8907.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 13907
+Error -9041.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 14041
+Error -9174.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 14175
+Error -9307.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 14308
+Error -9441.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 14442
+Error -9574.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 14575
+Error -9708.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 14709
+Error -9841.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 14841
+Error -9972.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 14972
+Error -10103.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 15103
+Error -10236.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 15236
+Error -10368.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 15368
+Error -10499.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 15500
+Error -10631.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 15631
+Error -10763.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 15763
+Error -10897.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 15897
+Error -11030.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 16030
+Error -11162.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 16163
+Error -11296.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 16296
+Error -11428.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 16428
+Error -11561.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 16561
+Error -11695.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 16696
+Error -11830.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 16830
+Error -11963.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 16963
+Error -12097.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 17098
+Error -12232.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 17232
+Error -12365.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 17365
+Error -12499.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 17499
+Error -12633.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 17633
+Error -12766.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 17766
+Error -12899.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 17900
+Error -13033.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 18033
+Error -13167.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 18167
+Error -13300.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 18301
+Error -13435.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 18435
+Error -13568.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 18569
+Error -13702.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 18702
+Error -13835.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 18835
+Error -13967.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 18968
+Error -14098.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 19098
+Error -14231.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 19231
+Error -14361.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 19361
+Error -14494.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 19494
+Error -14627.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 19627
+Error -14761.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 19762
+Error -14893.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 19894
+Error -15028.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 20028
+Error -15162.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 20162
+Error -15296.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 20297
+Error -15430.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 20431
+Error -15565.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 20565
+Error -15699.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 20699
+Error -15831.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 20831
+Error -15964.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 20965
+Error -16098.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 21098
+Error -16232.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 21232
+Error -16366.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 21366
+Error -16499.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 21499
+Error -16632.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 21633
+Error -16765.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 21766
+Error -16899.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 21900
+Error -17034.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 22034
+Error -17168.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 22168
+Error -17302.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 22302
+Error -17436.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 22436
+Error -17569.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 22569
+Error -17702.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 22702
+Error -17835.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 22835
+Error -17967.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 22967
+Error -18099.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 23099
+Error -18232.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 23232
+Error -18364.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 23365
+Error -18496.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 23497
+Error -18629.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 23630
+Error -18760.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 23761
+Error -18891.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 23892
+Error -19021.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 24021
+Error -19154.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 24154
+Error -19284.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 24284
+Error -19418.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 24418
+Error -19551.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 24551
+Error -19685.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 24685
+Error -19819.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 24819
+Error -19952.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 24952
+Error -20086.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 25086
+Error -20220.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 25220
+Error -20353.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 25353
+Error -20487.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 25487
+Error -20620.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 25620
+Error -20754.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 25754
+Error -20887.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 25888
+Error -21021.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 26022
+Error -21155.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 26155
+Error -21289.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 26289
+Error -21423.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 26423
+Error -21557.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 26557
+Error -21691.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 26691
+Error -21824.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 26824
+Error -21958.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 26958
+Error -22092.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 27092
+Error -22226.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 27226
+Error -22360.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 27360
+Error -22494.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 27494
+Error -22628.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 27628
+Error -22762.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 27763
+Error -22895.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 27896
+Error -23011.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 28011
+Error -23094.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 28094
+Error -23148.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 28149
+Error -23178.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 28178
+Error -23186.00, Integral: 0.00, Derivate: -inf, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186
+Error -23186.00, Integral: 0.00, Derivate: nan, ControlSignal: nan
+Setpoint: 5000, Position: 28186

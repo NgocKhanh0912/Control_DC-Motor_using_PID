@@ -1,0 +1,3149 @@
+boot:0x13 (SPI_FAST_FLA&'�A%�Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 11 2024 23:08:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a784h ( 42884) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001a7ac vaddr=3ffb0000 size=022ach (  8876) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001ca60 vaddr=40080000 size=035b8h ( 13752) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15e94h ( 89748) map[0m
+[0;32mI (164) esp_image: segment 4: paddr=00035ebc vaddr=400835b8 size=09560h ( 38240) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (186) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     PID_Control_DC-Motor[0m
+[0;32mI (216) cpu_start: App version:      1[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 11 2024 23:07:36[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  732d71b19...[0m
+[0;32mI (231) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (242) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2BD8 len 0002D428 (181 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB18 len 000134E8 (77 KiB): IRAM[0m
+[0;32mI (291) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (298) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (312) main_task: Started on CPU0[0m
+[0;32mI (322) main_task: Calling app_main()[0m
+[0;32mI (322) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (322) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Error 500.00, Integral: 0.50, Derivate: 499999.97, Output: 255.00
+Setpoint: 500, Position: 0
+[0;32mI (342) main_task: Returned from app_main()[0m
+Error 499.00, Integral: 1.00, Derivate: -1000.00, Output: 255.00
+Setpoint: 500, Position: 2
+Error 496.00, Integral: 1.50, Derivate: -3000.00, Output: 255.00
+Setpoint: 500, Position: 6
+Error 491.00, Integral: 1.99, Derivate: -5000.00, Output: 255.00
+Setpoint: 500, Position: 10
+Error 484.00, Integral: 2.47, Derivate: -7000.00, Output: 255.00
+Setpoint: 500, Position: 16
+Error 476.00, Integral: 2.95, Derivate: -8000.00, Output: 255.00
+Setpoint: 500, Position: 24
+Error 466.00, Integral: 3.41, Derivate: -10000.00, Output: 255.00
+Setpoint: 500, Position: 34
+Error 456.00, Integral: 3.87, Derivate: -10000.00, Output: 255.00
+Setpoint: 500, Position: 44
+Error 445.00, Integral: 4.31, Derivate: -11000.00, Output: 255.00
+Setpoint: 500, Position: 55
+Error 434.00, Integral: 4.75, Derivate: -11000.00, Output: 255.00
+Setpoint: 500, Position: 66
+Error 422.00, Integral: 5.17, Derivate: -12000.00, Output: 255.00
+Setpoint: 500, Position: 78
+Error 410.00, Integral: 5.58, Derivate: -12000.00, Output: 255.00
+Setpoint: 500, Position: 90
+Error 398.00, Integral: 5.98, Derivate: -12000.00, Output: 255.00
+Setpoint: 500, Position: 102
+Error 385.00, Integral: 6.36, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 115
+Error 373.00, Integral: 6.74, Derivate: -12000.00, Output: 255.00
+Setpoint: 500, Position: 128
+Error 360.00, Integral: 7.10, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 140
+Error 347.00, Integral: 7.44, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 153
+Error 334.00, Integral: 7.78, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 166
+Error 321.00, Integral: 8.10, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 179
+Error 308.00, Integral: 8.41, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 192
+Error 295.00, Integral: 8.70, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 205
+Error 282.00, Integral: 8.98, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 218
+Error 269.00, Integral: 9.25, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 232
+Error 255.00, Integral: 9.51, Derivate: -14000.00, Output: 255.00
+Setpoint: 500, Position: 245
+Error 242.00, Integral: 9.75, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 258
+Error 229.00, Integral: 9.98, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 271
+Error 216.00, Integral: 10.19, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 285
+Error 203.00, Integral: 10.40, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 298
+Error 189.00, Integral: 10.59, Derivate: -14000.00, Output: 255.00
+Setpoint: 500, Position: 311
+Error 176.00, Integral: 10.76, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 324
+Error 163.00, Integral: 10.92, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 337
+Error 150.00, Integral: 11.07, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 351
+Error 136.00, Integral: 11.21, Derivate: -14000.00, Output: 255.00
+Setpoint: 500, Position: 364
+Error 123.00, Integral: 11.33, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 377
+Error 110.00, Integral: 11.44, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 391
+Error 97.00, Integral: 11.54, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 404
+Error 83.00, Integral: 11.62, Derivate: -14000.00, Output: 255.00
+Setpoint: 500, Position: 417
+Error 70.00, Integral: 11.69, Derivate: -13000.00, Output: 255.00
+Setpoint: 500, Position: 430
+Error 57.00, Integral: 11.75, Derivate: -13000.00, Output: 229.75
+Setpoint: 500, Position: 444
+Error 44.00, Integral: 11.79, Derivate: -13000.00, Output: 190.97
+Setpoint: 500, Position: 457
+Error 30.00, Integral: 11.82, Derivate: -14000.00, Output: 149.12
+Setpoint: 500, Position: 470
+Error 18.00, Integral: 11.84, Derivate: -12000.00, Output: 113.21
+Setpoint: 500, Position: 483
+Error 5.00, Integral: 11.85, Derivate: -13000.00, Output: 74.23
+Setpoint: 500, Position: 495
+Error -7.00, Integral: 11.84, Derivate: -12000.00, Output: 38.20
+Setpoint: 500, Position: 508
+Error -20.00, Integral: 11.82, Derivate: -13000.00, Output: -0.90
+Setpoint: 500, Position: 520
+Error -31.00, Integral: 11.79, Derivate: -11000.00, Output: -34.06
+Setpoint: 500, Position: 532
+Error -45.00, Integral: 11.74, Derivate: -14000.00, Output: -76.28
+Setpoint: 500, Position: 547
+Error -64.00, Integral: 11.68, Derivate: -19000.00, Output: -133.60
+Setpoint: 500, Position: 565
+Error -79.00, Integral: 11.60, Derivate: -15000.00, Output: -179.00
+Setpoint: 500, Position: 580
+Error -90.00, Integral: 11.51, Derivate: -11000.00, Output: -212.45
+Setpoint: 500, Position: 591
+Error -94.00, Integral: 11.42, Derivate: -4000.00, Output: -224.92
+Setpoint: 500, Position: 594
+Error -95.00, Integral: 11.32, Derivate: -1000.00, Output: -228.39
+Setpoint: 500, Position: 595
+Error -97.00, Integral: 11.22, Derivate: -2000.00, Output: -234.88
+Setpoint: 500, Position: 597
+Error -100.00, Integral: 11.12, Derivate: -3000.00, Output: -244.38
+Setpoint: 500, Position: 600
+Error -105.00, Integral: 11.02, Derivate: -5000.00, Output: -255.00
+Setpoint: 500, Position: 605
+Error -111.00, Integral: 10.91, Derivate: -6000.00, Output: -255.00
+Setpoint: 500, Position: 611
+Error -119.00, Integral: 10.79, Derivate: -8000.00, Output: -255.00
+Setpoint: 500, Position: 619
+Error -129.00, Integral: 10.66, Derivate: -10000.00, Output: -255.00
+Setpoint: 500, Position: 629
+Error -139.00, Integral: 10.52, Derivate: -10000.00, Output: -255.00
+Setpoint: 500, Position: 639
+Error -150.00, Integral: 10.37, Derivate: -11000.00, Output: -255.00
+Setpoint: 500, Position: 650
+Error -161.00, Integral: 10.21, Derivate: -11000.00, Output: -255.00
+Setpoint: 500, Position: 661
+Error -174.00, Integral: 10.04, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 674
+Error -188.00, Integral: 9.85, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 688
+Error -201.00, Integral: 9.65, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 701
+Error -214.00, Integral: 9.43, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 714
+Error -226.00, Integral: 9.21, Derivate: -12000.00, Output: -255.00
+Setpoint: 500, Position: 727
+Error -239.00, Integral: 8.97, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 740
+Error -252.00, Integral: 8.72, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 753
+Error -265.00, Integral: 8.45, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 766
+Error -278.00, Integral: 8.17, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 779
+Error -292.00, Integral: 7.88, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 792
+Error -305.00, Integral: 7.58, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 805
+Error -318.00, Integral: 7.26, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 819
+Error -332.00, Integral: 6.93, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 832
+Error -345.00, Integral: 6.58, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 845
+Error -358.00, Integral: 6.22, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 859
+Error -372.00, Integral: 5.85, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 872
+Error -385.00, Integral: 5.47, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 885
+Error -398.00, Integral: 5.07, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 899
+Error -412.00, Integral: 4.66, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 912
+Error -425.00, Integral: 4.23, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 926
+Error -439.00, Integral: 3.79, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 939
+Error -452.00, Integral: 3.34, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 953
+Error -466.00, Integral: 2.87, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 966
+Error -479.00, Integral: 2.40, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 980
+Error -493.00, Integral: 1.90, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 993
+Error -506.00, Integral: 1.40, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1006
+Error -519.00, Integral: 0.88, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1020
+Error -533.00, Integral: 0.34, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1033
+Error -546.00, Integral: -0.20, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1047
+Error -560.00, Integral: -0.76, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1060
+Error -573.00, Integral: -1.33, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1074
+Error -587.00, Integral: -1.92, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1087
+Error -600.00, Integral: -2.52, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1101
+Error -614.00, Integral: -3.14, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1114
+Error -627.00, Integral: -3.76, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1128
+Error -641.00, Integral: -4.40, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1141
+Error -654.00, Integral: -5.06, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1155
+Error -668.00, Integral: -5.73, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1168
+Error -681.00, Integral: -6.41, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1181
+Error -695.00, Integral: -7.10, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1195
+Error -708.00, Integral: -7.81, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1208
+Error -722.00, Integral: -8.53, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1222
+Error -735.00, Integral: -9.27, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1235
+Error -748.00, Integral: -10.01, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1249
+Error -762.00, Integral: -10.78, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1262
+Error -775.00, Integral: -11.55, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1276
+Error -789.00, Integral: -12.34, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1289
+Error -802.00, Integral: -13.14, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1303
+Error -816.00, Integral: -13.96, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1316
+Error -829.00, Integral: -14.79, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1330
+Error -843.00, Integral: -15.63, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1343
+Error -856.00, Integral: -16.49, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1357
+Error -870.00, Integral: -17.36, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1370
+Error -883.00, Integral: -18.24, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1384
+Error -897.00, Integral: -19.14, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1397
+Error -910.00, Integral: -20.05, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1411
+Error -924.00, Integral: -20.97, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1424
+Error -937.00, Integral: -21.91, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1437
+Error -951.00, Integral: -22.86, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1451
+Error -964.00, Integral: -23.82, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1464
+Error -978.00, Integral: -24.80, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1478
+Error -991.00, Integral: -25.79, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1491
+Error -1005.00, Integral: -26.80, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1505
+Error -1018.00, Integral: -27.81, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1518
+Error -1031.00, Integral: -28.85, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1532
+Error -1045.00, Integral: -29.89, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1545
+Error -1058.00, Integral: -30.95, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1559
+Error -1072.00, Integral: -32.02, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1572
+Error -1085.00, Integral: -33.11, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1586
+Error -1099.00, Integral: -34.20, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1599
+Error -1112.00, Integral: -35.32, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1613
+Error -1126.00, Integral: -36.44, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1626
+Error -1139.00, Integral: -37.58, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1640
+Error -1153.00, Integral: -38.73, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1653
+Error -1166.00, Integral: -39.90, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1667
+Error -1180.00, Integral: -41.08, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1680
+Error -1193.00, Integral: -42.27, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1694
+Error -1207.00, Integral: -43.48, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1707
+Error -1220.00, Integral: -44.70, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1721
+Error -1234.00, Integral: -45.93, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1734
+Error -1247.00, Integral: -47.18, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1748
+Error -1261.00, Integral: -48.44, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1761
+Error -1274.00, Integral: -49.72, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1774
+Error -1288.00, Integral: -51.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1788
+Error -1301.00, Integral: -52.31, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1801
+Error -1315.00, Integral: -53.62, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1815
+Error -1328.00, Integral: -54.95, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1828
+Error -1342.00, Integral: -56.29, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1842
+Error -1355.00, Integral: -57.65, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1855
+Error -1368.00, Integral: -59.01, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1869
+Error -1382.00, Integral: -60.40, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1882
+Error -1395.00, Integral: -61.79, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1896
+Error -1409.00, Integral: -63.20, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1909
+Error -1422.00, Integral: -64.62, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1923
+Error -1436.00, Integral: -66.06, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1936
+Error -1449.00, Integral: -67.51, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1950
+Error -1463.00, Integral: -68.97, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1963
+Error -1476.00, Integral: -70.44, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 1977
+Error -1490.00, Integral: -71.93, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 1990
+Error -1503.00, Integral: -73.44, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2004
+Error -1517.00, Integral: -74.95, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2017
+Error -1530.00, Integral: -76.48, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2031
+Error -1544.00, Integral: -78.03, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2044
+Error -1557.00, Integral: -79.59, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2058
+Error -1571.00, Integral: -81.16, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2071
+Error -1584.00, Integral: -82.74, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2085
+Error -1598.00, Integral: -84.34, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2098
+Error -1611.00, Integral: -85.95, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2112
+Error -1625.00, Integral: -87.57, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2125
+Error -1638.00, Integral: -89.21, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2138
+Error -1652.00, Integral: -90.86, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2152
+Error -1665.00, Integral: -92.53, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2166
+Error -1679.00, Integral: -94.21, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2179
+Error -1692.00, Integral: -95.90, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2192
+Error -1706.00, Integral: -97.61, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2206
+Error -1719.00, Integral: -99.33, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2219
+Error -1732.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2233
+Error -1746.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2246
+Error -1760.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2260
+Error -1773.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2273
+Error -1786.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2287
+Error -1800.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2300
+Error -1813.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2314
+Error -1827.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2327
+Error -1840.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2341
+Error -1854.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2354
+Error -1867.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2368
+Error -1881.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2381
+Error -1894.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2395
+Error -1908.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2408
+Error -1921.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2422
+Error -1935.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2435
+Error -1948.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2449
+Error -1962.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2462
+Error -1975.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2476
+Error -1989.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2489
+Error -2002.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2503
+Error -2016.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2516
+Error -2029.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2530
+Error -2043.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2543
+Error -2056.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2556
+Error -2070.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2570
+Error -2083.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2584
+Error -2097.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2597
+Error -2110.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2610
+Error -2124.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2624
+Error -2137.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2637
+Error -2151.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2651
+Error -2164.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2664
+Error -2178.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2678
+Error -2191.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2691
+Error -2205.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2705
+Error -2218.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2718
+Error -2231.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2732
+Error -2245.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2745
+Error -2258.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2759
+Error -2272.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2772
+Error -2285.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2786
+Error -2299.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2799
+Error -2312.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2813
+Error -2326.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2826
+Error -2339.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2840
+Error -2353.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2853
+Error -2366.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2867
+Error -2380.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2880
+Error -2393.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2894
+Error -2407.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2907
+Error -2420.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2921
+Error -2434.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2934
+Error -2447.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2948
+Error -2461.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2961
+Error -2474.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 2975
+Error -2488.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 2988
+Error -2501.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3002
+Error -2515.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3015
+Error -2528.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3029
+Error -2542.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3042
+Error -2555.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3056
+Error -2569.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3069
+Error -2582.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3083
+Error -2596.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3096
+Error -2609.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3110
+Error -2623.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3123
+Error -2636.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3137
+Error -2650.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3150
+Error -2663.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3164
+Error -2677.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3177
+Error -2690.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3191
+Error -2704.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3204
+Error -2717.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3218
+Error -2731.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3231
+Error -2744.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3244
+Error -2758.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3258
+Error -2771.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3271
+Error -2785.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3285
+Error -2798.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3298
+Error -2812.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3312
+Error -2825.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3325
+Error -2839.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3339
+Error -2852.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3352
+Error -2866.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3366
+Error -2879.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3379
+Error -2893.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3393
+Error -2906.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3406
+Error -2920.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3420
+Error -2933.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3433
+Error -2947.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3447
+Error -2960.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3460
+Error -2974.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3474
+Error -2987.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3487
+Error -3000.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3501
+Error -3014.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3514
+Error -3028.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3528
+Error -3041.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3541
+Error -3054.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3555
+Error -3068.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3568
+Error -3081.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3582
+Error -3095.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3595
+Error -3108.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3609
+Error -3122.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3622
+Error -3135.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3636
+Error -3149.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3649
+Error -3162.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3663
+Error -3176.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3676
+Error -3189.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3690
+Error -3203.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3703
+Error -3216.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3717
+Error -3230.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3730
+Error -3243.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3744
+Error -3257.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3757
+Error -3270.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3771
+Error -3284.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3784
+Error -3297.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3798
+Error -3311.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3811
+Error -3324.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3825
+Error -3338.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3838
+Error -3351.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3852
+Error -3365.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3865
+Error -3378.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3879
+Error -3392.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3892
+Error -3405.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3906
+Error -3419.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3919
+Error -3432.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3933
+Error -3446.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3946
+Error -3459.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3960
+Error -3473.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 3973
+Error -3486.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 3987
+Error -3500.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4000
+Error -3513.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4014
+Error -3527.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4027
+Error -3540.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4041
+Error -3554.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4054
+Error -3567.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4068
+Error -3581.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4081
+Error -3594.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4095
+Error -3608.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4108
+Error -3621.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4122
+Error -3635.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4135
+Error -3648.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4149
+Error -3662.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4162
+Error -3675.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4176
+Error -3689.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4189
+Error -3702.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4203
+Error -3716.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4216
+Error -3729.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4230
+Error -3743.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4243
+Error -3756.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4257
+Error -3770.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4270
+Error -3783.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4284
+Error -3797.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4297
+Error -3810.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4311
+Error -3824.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4324
+Error -3837.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4338
+Error -3851.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4351
+Error -3864.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4365
+Error -3878.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4378
+Error -3891.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4392
+Error -3905.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4405
+Error -3918.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4419
+Error -3932.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4432
+Error -3945.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4446
+Error -3959.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4459
+Error -3972.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4473
+Error -3986.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4486
+Error -3999.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4500
+Error -4013.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4513
+Error -4026.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4527
+Error -4040.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4540
+Error -4053.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4554
+Error -4067.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4567
+Error -4080.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4581
+Error -4094.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4594
+Error -4107.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4608
+Error -4121.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4621
+Error -4134.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4635
+Error -4148.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4648
+Error -4161.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4662
+Error -4175.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4675
+Error -4188.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4689
+Error -4202.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4702
+Error -4215.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4716
+Error -4229.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4729
+Error -4242.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4743
+Error -4256.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4756
+Error -4269.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4770
+Error -4283.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4783
+Error -4296.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4797
+Error -4310.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4810
+Error -4323.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4824
+Error -4337.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4837
+Error -4350.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4851
+Error -4364.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4864
+Error -4377.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4878
+Error -4391.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4891
+Error -4404.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4905
+Error -4418.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4918
+Error -4432.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4932
+Error -4445.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4945
+Error -4458.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4959
+Error -4472.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4972
+Error -4485.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 4986
+Error -4499.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 4999
+Error -4513.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5013
+Error -4526.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5026
+Error -4540.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5040
+Error -4553.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5053
+Error -4567.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5067
+Error -4580.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5080
+Error -4594.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5094
+Error -4607.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5107
+Error -4621.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5121
+Error -4634.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5134
+Error -4648.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5148
+Error -4661.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5161
+Error -4675.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5175
+Error -4688.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5189
+Error -4702.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5202
+Error -4715.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5216
+Error -4729.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5229
+Error -4742.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5243
+Error -4756.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5256
+Error -4769.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5270
+Error -4783.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5283
+Error -4796.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5297
+Error -4810.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5310
+Error -4823.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5324
+Error -4837.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5337
+Error -4850.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5351
+Error -4864.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5364
+Error -4877.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5378
+Error -4891.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5391
+Error -4904.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5405
+Error -4918.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5418
+Error -4931.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5432
+Error -4945.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5445
+Error -4958.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5459
+Error -4972.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5472
+Error -4985.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5486
+Error -4999.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5499
+Error -5012.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5513
+Error -5026.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5526
+Error -5039.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5540
+Error -5053.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5553
+Error -5066.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5567
+Error -5080.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5580
+Error -5093.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5594
+Error -5107.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5607
+Error -5120.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5621
+Error -5134.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5634
+Error -5147.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5648
+Error -5161.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5661
+Error -5174.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5675
+Error -5188.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5688
+Error -5202.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5702
+Error -5215.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5715
+Error -5229.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5729
+Error -5242.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5742
+Error -5256.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5756
+Error -5269.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5769
+Error -5283.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5783
+Error -5296.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5797
+Error -5310.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5810
+Error -5323.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5824
+Error -5337.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5837
+Error -5350.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5851
+Error -5364.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5864
+Error -5377.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5878
+Error -5391.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5891
+Error -5404.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5905
+Error -5418.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5918
+Error -5431.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5932
+Error -5445.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5945
+Error -5458.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5959
+Error -5472.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5972
+Error -5485.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 5986
+Error -5499.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 5999
+Error -5512.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6013
+Error -5526.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6026
+Error -5539.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6040
+Error -5553.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6053
+Error -5566.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6067
+Error -5580.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6080
+Error -5593.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6094
+Error -5607.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6107
+Error -5620.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6121
+Error -5634.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6134
+Error -5648.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6148
+Error -5661.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6161
+Error -5674.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6175
+Error -5688.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6188
+Error -5701.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6202
+Error -5715.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6215
+Error -5729.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6229
+Error -5742.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6242
+Error -5756.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6256
+Error -5769.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6269
+Error -5783.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6283
+Error -5796.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6296
+Error -5810.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6310
+Error -5823.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6324
+Error -5837.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6337
+Error -5850.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6351
+Error -5864.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6364
+Error -5877.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6378
+Error -5891.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6391
+Error -5904.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6405
+Error -5918.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6418
+Error -5931.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6432
+Error -5945.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6445
+Error -5958.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6459
+Error -5972.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6472
+Error -5985.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6486
+Error -5999.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6499
+Error -6012.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6513
+Error -6026.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6526
+Error -6039.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6540
+Error -6053.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6553
+Error -6066.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6567
+Error -6080.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6580
+Error -6093.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6594
+Error -6107.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6607
+Error -6120.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6621
+Error -6134.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6634
+Error -6148.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6648
+Error -6161.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6661
+Error -6175.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6675
+Error -6188.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6688
+Error -6202.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6702
+Error -6215.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6715
+Error -6229.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6729
+Error -6242.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6743
+Error -6256.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6756
+Error -6269.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6770
+Error -6283.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6783
+Error -6296.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6797
+Error -6310.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6810
+Error -6323.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6824
+Error -6337.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6837
+Error -6350.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6851
+Error -6364.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6864
+Error -6377.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6878
+Error -6391.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6891
+Error -6404.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6905
+Error -6418.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6918
+Error -6431.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6932
+Error -6445.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6945
+Error -6458.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6959
+Error -6472.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6972
+Error -6486.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 6986
+Error -6499.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 6999
+Error -6513.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7013
+Error -6526.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7027
+Error -6540.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7040
+Error -6553.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7054
+Error -6567.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7067
+Error -6580.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7081
+Error -6594.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7094
+Error -6607.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7108
+Error -6621.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7121
+Error -6634.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7135
+Error -6648.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7148
+Error -6661.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7162
+Error -6675.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7175
+Error -6688.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7189
+Error -6702.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7202
+Error -6715.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7216
+Error -6729.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7229
+Error -6742.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7243
+Error -6756.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7256
+Error -6770.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7270
+Error -6783.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7283
+Error -6797.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7297
+Error -6810.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7310
+Error -6824.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7324
+Error -6837.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7338
+Error -6851.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7351
+Error -6864.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7365
+Error -6878.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7378
+Error -6891.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7392
+Error -6905.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7405
+Error -6918.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7419
+Error -6932.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7432
+Error -6945.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7446
+Error -6959.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7459
+Error -6972.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7473
+Error -6986.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7486
+Error -6999.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7500
+Error -7013.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7513
+Error -7027.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7527
+Error -7040.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7541
+Error -7054.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7554
+Error -7067.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7568
+Error -7081.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7581
+Error -7094.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7595
+Error -7108.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7608
+Error -7121.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7622
+Error -7135.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7635
+Error -7148.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7649
+Error -7162.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7662
+Error -7175.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7676
+Error -7189.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7689
+Error -7202.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7703
+Error -7216.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7716
+Error -7230.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7730
+Error -7243.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7743
+Error -7257.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7757
+Error -7270.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7770
+Error -7284.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7784
+Error -7297.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7798
+Error -7311.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7811
+Error -7324.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7825
+Error -7338.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7838
+Error -7351.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7852
+Error -7365.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7865
+Error -7378.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7879
+Error -7392.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7892
+Error -7405.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7906
+Error -7419.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7919
+Error -7432.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7933
+Error -7446.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7946
+Error -7460.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7960
+Error -7473.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 7974
+Error -7487.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 7987
+Error -7500.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8001
+Error -7514.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8014
+Error -7527.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8028
+Error -7541.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8041
+Error -7554.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8055
+Error -7568.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8068
+Error -7581.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8082
+Error -7595.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8095
+Error -7608.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8109
+Error -7622.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8122
+Error -7636.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8136
+Error -7649.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8149
+Error -7663.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8163
+Error -7676.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8176
+Error -7690.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8190
+Error -7703.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8204
+Error -7717.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8217
+Error -7730.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8231
+Error -7744.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8244
+Error -7757.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8258
+Error -7771.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8271
+Error -7784.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8285
+Error -7798.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8298
+Error -7811.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8312
+Error -7825.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8325
+Error -7839.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8339
+Error -7852.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8352
+Error -7866.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8366
+Error -7879.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8380
+Error -7893.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8393
+Error -7906.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8407
+Error -7920.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8420
+Error -7933.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8434
+Error -7947.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8447
+Error -7960.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8461
+Error -7974.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8474
+Error -7988.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8488
+Error -8001.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8501
+Error -8015.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8515
+Error -8028.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8529
+Error -8042.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8542
+Error -8055.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8556
+Error -8069.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8569
+Error -8082.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8583
+Error -8096.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8596
+Error -8109.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8610
+Error -8123.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8623
+Error -8136.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8637
+Error -8150.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8650
+Error -8164.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8664
+Error -8177.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8678
+Error -8191.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8691
+Error -8204.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8705
+Error -8218.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8718
+Error -8231.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8732
+Error -8245.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8745
+Error -8258.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8759
+Error -8272.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8772
+Error -8285.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8786
+Error -8299.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8799
+Error -8313.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8813
+Error -8326.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8826
+Error -8340.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8840
+Error -8353.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8854
+Error -8367.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8867
+Error -8380.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8881
+Error -8394.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8894
+Error -8407.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8908
+Error -8421.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8921
+Error -8435.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8935
+Error -8448.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8948
+Error -8462.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8962
+Error -8475.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 8976
+Error -8489.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 8989
+Error -8502.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9003
+Error -8516.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9016
+Error -8529.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9030
+Error -8543.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9043
+Error -8556.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9057
+Error -8570.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9070
+Error -8584.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9084
+Error -8597.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9097
+Error -8611.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9111
+Error -8624.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9125
+Error -8638.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9138
+Error -8651.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9152
+Error -8665.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9165
+Error -8678.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9179
+Error -8692.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9192
+Error -8706.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9206
+Error -8719.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9220
+Error -8733.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9233
+Error -8746.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9247
+Error -8760.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9260
+Error -8773.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9274
+Error -8787.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9287
+Error -8801.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9301
+Error -8814.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9314
+Error -8828.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9328
+Error -8841.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9342
+Error -8855.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9355
+Error -8868.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9369
+Error -8882.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9382
+Error -8895.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9396
+Error -8909.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9409
+Error -8923.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9423
+Error -8936.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9436
+Error -8950.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9450
+Error -8963.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9464
+Error -8977.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9477
+Error -8990.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9491
+Error -9004.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9504
+Error -9018.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9518
+Error -9031.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9531
+Error -9045.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9545
+Error -9058.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9559
+Error -9072.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9572
+Error -9085.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9586
+Error -9099.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9599
+Error -9112.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9613
+Error -9126.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9626
+Error -9140.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9640
+Error -9153.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9654
+Error -9167.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9667
+Error -9180.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9681
+Error -9194.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9694
+Error -9207.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9708
+Error -9221.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9721
+Error -9235.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9735
+Error -9248.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9749
+Error -9262.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9762
+Error -9275.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9776
+Error -9289.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9789
+Error -9302.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9803
+Error -9316.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9816
+Error -9330.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9830
+Error -9343.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9844
+Error -9357.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9857
+Error -9370.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9871
+Error -9384.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9884
+Error -9397.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9898
+Error -9411.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9911
+Error -9425.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9925
+Error -9438.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9939
+Error -9452.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9952
+Error -9465.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9966
+Error -9479.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 9979
+Error -9492.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 9993
+Error -9506.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10006
+Error -9520.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10020
+Error -9533.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10034
+Error -9547.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10047
+Error -9560.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10061
+Error -9574.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10074
+Error -9587.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10088
+Error -9601.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10101
+Error -9615.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10115
+Error -9628.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10129
+Error -9642.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10142
+Error -9655.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10156
+Error -9669.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10169
+Error -9683.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10183
+Error -9696.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10196
+Error -9710.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10210
+Error -9723.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10224
+Error -9737.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10237
+Error -9750.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10251
+Error -9764.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10264
+Error -9778.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10278
+Error -9791.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10291
+Error -9805.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10305
+Error -9818.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10319
+Error -9832.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10332
+Error -9845.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10346
+Error -9859.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10359
+Error -9873.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10373
+Error -9886.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10386
+Error -9900.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10400
+Error -9913.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10414
+Error -9927.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10427
+Error -9940.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10441
+Error -9954.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10454
+Error -9968.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10468
+Error -9981.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10481
+Error -9995.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10495
+Error -10008.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10509
+Error -10022.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10522
+Error -10035.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10536
+Error -10049.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10549
+Error -10063.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10563
+Error -10076.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10577
+Error -10090.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10590
+Error -10103.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10604
+Error -10117.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10617
+Error -10130.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10631
+Error -10144.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10644
+Error -10158.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10658
+Error -10171.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10672
+Error -10185.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10685
+Error -10198.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10699
+Error -10212.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10712
+Error -10225.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10726
+Error -10239.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10739
+Error -10253.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10753
+Error -10266.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10767
+Error -10280.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10780
+Error -10293.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10794
+Error -10307.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10807
+Error -10320.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10821
+Error -10334.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10834
+Error -10348.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10848
+Error -10361.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10862
+Error -10375.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10875
+Error -10388.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10889
+Error -10402.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10902
+Error -10415.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10916
+Error -10429.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10929
+Error -10443.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10943
+Error -10456.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10957
+Error -10470.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10970
+Error -10483.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 10984
+Error -10497.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 10997
+Error -10511.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11011
+Error -10524.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11024
+Error -10538.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11038
+Error -10551.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11052
+Error -10565.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11065
+Error -10578.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11079
+Error -10592.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11092
+Error -10606.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11106
+Error -10619.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11120
+Error -10633.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11133
+Error -10646.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11147
+Error -10660.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11160
+Error -10673.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11174
+Error -10687.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11187
+Error -10701.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11201
+Error -10714.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11215
+Error -10728.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11228
+Error -10741.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11242
+Error -10755.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11255
+Error -10768.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11269
+Error -10782.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11282
+Error -10796.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11296
+Error -10809.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11310
+Error -10823.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11323
+Error -10836.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11337
+Error -10850.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11350
+Error -10864.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11364
+Error -10877.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11377
+Error -10891.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11391
+Error -10904.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11405
+Error -10918.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11418
+Error -10931.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11432
+Error -10945.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11445
+Error -10959.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11459
+Error -10972.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11473
+Error -10986.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11486
+Error -10999.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11500
+Error -11013.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11513
+Error -11026.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11527
+Error -11040.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11540
+Error -11054.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11554
+Error -11067.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11568
+Error -11081.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11581
+Error -11094.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11595
+Error -11108.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11608
+Error -11121.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11622
+Error -11135.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11635
+Error -11149.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11649
+Error -11162.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11663
+Error -11176.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11676
+Error -11189.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11690
+Error -11203.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11703
+Error -11216.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11717
+Error -11230.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11730
+Error -11244.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11744
+Error -11257.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11758
+Error -11271.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11771
+Error -11284.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11785
+Error -11298.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11798
+Error -11312.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11812
+Error -11325.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11825
+Error -11339.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11839
+Error -11352.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11853
+Error -11366.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11866
+Error -11379.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11880
+Error -11393.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11893
+Error -11407.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11907
+Error -11420.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11921
+Error -11434.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11934
+Error -11447.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11948
+Error -11461.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11961
+Error -11474.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 11975
+Error -11488.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 11988
+Error -11502.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12002
+Error -11515.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12016
+Error -11529.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12029
+Error -11542.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12043
+Error -11556.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12056
+Error -11570.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12070
+Error -11583.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12084
+Error -11597.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12097
+Error -11610.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12111
+Error -11624.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12124
+Error -11637.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12138
+Error -11651.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12151
+Error -11665.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12165
+Error -11678.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12179
+Error -11692.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12192
+Error -11705.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12206
+Error -11719.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12219
+Error -11732.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12233
+Error -11746.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12246
+Error -11760.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12260
+Error -11773.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12274
+Error -11787.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12287
+Error -11800.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12301
+Error -11814.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12314
+Error -11828.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12328
+Error -11841.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12342
+Error -11855.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12355
+Error -11868.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12369
+Error -11882.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12382
+Error -11895.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12396
+Error -11909.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12409
+Error -11923.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12423
+Error -11936.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12437
+Error -11950.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12450
+Error -11963.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12464
+Error -11977.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12477
+Error -11990.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12491
+Error -12004.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12504
+Error -12018.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12518
+Error -12031.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12532
+Error -12045.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12545
+Error -12058.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12559
+Error -12072.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12572
+Error -12085.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12586
+Error -12099.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12599
+Error -12113.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12613
+Error -12126.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12627
+Error -12140.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12640
+Error -12153.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12654
+Error -12167.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12667
+Error -12180.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12681
+Error -12194.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12695
+Error -12208.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12708
+Error -12221.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12722
+Error -12235.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12735
+Error -12248.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12749
+Error -12262.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12762
+Error -12276.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12776
+Error -12289.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12790
+Error -12303.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12803
+Error -12316.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12817
+Error -12330.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12830
+Error -12343.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12844
+Error -12357.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12857
+Error -12371.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12871
+Error -12384.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12885
+Error -12398.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12898
+Error -12411.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12912
+Error -12425.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12925
+Error -12438.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12939
+Error -12452.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12952
+Error -12466.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12966
+Error -12479.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 12980
+Error -12493.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 12993
+Error -12506.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13007
+Error -12520.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13020
+Error -12533.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13034
+Error -12547.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13047
+Error -12561.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13061
+Error -12574.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13075
+Error -12588.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13088
+Error -12601.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13102
+Error -12615.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13115
+Error -12628.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13129
+Error -12642.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13142
+Error -12656.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13156
+Error -12669.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13170
+Error -12683.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13183
+Error -12696.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13197
+Error -12710.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13210
+Error -12723.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13224
+Error -12737.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13237
+Error -12751.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13251
+Error -12764.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13265
+Error -12778.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13278
+Error -12791.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13292
+Error -12805.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13305
+Error -12819.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13319
+Error -12832.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13332
+Error -12846.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13346
+Error -12859.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13360
+Error -12873.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13373
+Error -12886.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13387
+Error -12900.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13400
+Error -12914.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13414
+Error -12927.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13428
+Error -12941.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13441
+Error -12954.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13455
+Error -12968.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13468
+Error -12981.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13482
+Error -12995.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13495
+Error -13009.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13509
+Error -13022.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13523
+Error -13036.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13536
+Error -13049.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13550
+Error -13063.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13563
+Error -13076.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13577
+Error -13090.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13590
+Error -13104.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13604
+Error -13117.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13618
+Error -13131.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13631
+Error -13144.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13645
+Error -13158.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13658
+Error -13171.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13672
+Error -13185.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13685
+Error -13199.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13699
+Error -13212.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13713
+Error -13226.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13726
+Error -13239.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13740
+Error -13253.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13753
+Error -13266.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13767
+Error -13280.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13780
+Error -13294.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13794
+Error -13307.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13808
+Error -13321.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13821
+Error -13334.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13835
+Error -13348.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13848
+Error -13361.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13862
+Error -13375.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13875
+Error -13389.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13889
+Error -13402.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13903
+Error -13416.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13916
+Error -13429.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13930
+Error -13443.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13943
+Error -13456.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13957
+Error -13470.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13970
+Error -13484.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 13984
+Error -13497.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 13998
+Error -13511.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14011
+Error -13524.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14025
+Error -13538.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14038
+Error -13552.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14052
+Error -13565.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14065
+Error -13579.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14079
+Error -13592.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14093
+Error -13606.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14106
+Error -13619.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14120
+Error -13633.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14133
+Error -13647.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14147
+Error -13660.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14160
+Error -13674.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14174
+Error -13687.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14188
+Error -13701.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14201
+Error -13714.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14215
+Error -13728.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14228
+Error -13742.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14242
+Error -13755.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14255
+Error -13769.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14269
+Error -13782.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14283
+Error -13796.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14296
+Error -13809.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14310
+Error -13823.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14323
+Error -13837.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14337
+Error -13850.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14351
+Error -13864.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14364
+Error -13877.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14378
+Error -13891.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14391
+Error -13904.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14405
+Error -13918.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14418
+Error -13932.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14432
+Error -13945.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14446
+Error -13959.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14459
+Error -13972.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14473
+Error -13986.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14486
+Error -13999.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14500
+Error -14013.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14513
+Error -14027.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14527
+Error -14040.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14540
+Error -14054.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14554
+Error -14067.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14568
+Error -14081.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14581
+Error -14094.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14595
+Error -14108.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14608
+Error -14122.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14622
+Error -14135.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14635
+Error -14149.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14649
+Error -14162.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14663
+Error -14176.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14676
+Error -14189.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14690
+Error -14203.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14703
+Error -14217.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14717
+Error -14230.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14731
+Error -14244.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14744
+Error -14257.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14758
+Error -14271.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14771
+Error -14284.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14785
+Error -14298.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14798
+Error -14312.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14812
+Error -14325.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14826
+Error -14339.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14839
+Error -14352.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14853
+Error -14366.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14866
+Error -14379.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14880
+Error -14393.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14893
+Error -14407.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14907
+Error -14420.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14921
+Error -14434.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14934
+Error -14447.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14948
+Error -14461.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14961
+Error -14475.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 14975
+Error -14488.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 14988
+Error -14502.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15002
+Error -14515.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15016
+Error -14529.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15029
+Error -14542.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15043
+Error -14556.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15056
+Error -14570.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15070
+Error -14583.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15083
+Error -14597.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15097
+Error -14610.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15111
+Error -14624.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15124
+Error -14637.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15138
+Error -14651.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15151
+Error -14665.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15165
+Error -14678.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15178
+Error -14692.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15192
+Error -14705.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15206
+Error -14719.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15219
+Error -14732.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15233
+Error -14746.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15246
+Error -14760.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15260
+Error -14773.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15274
+Error -14787.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15287
+Error -14800.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15301
+Error -14814.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15314
+Error -14827.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15328
+Error -14841.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15341
+Error -14855.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15355
+Error -14868.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15369
+Error -14882.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15382
+Error -14895.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15396
+Error -14909.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15409
+Error -14922.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15423
+Error -14936.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15436
+Error -14950.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15450
+Error -14963.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15464
+Error -14977.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15477
+Error -14990.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15491
+Error -15004.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15504
+Error -15017.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15518
+Error -15031.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15531
+Error -15045.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15545
+Error -15058.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15559
+Error -15072.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15572
+Error -15085.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15586
+Error -15099.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15599
+Error -15112.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15613
+Error -15126.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15626
+Error -15140.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15640
+Error -15153.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15654
+Error -15167.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15667
+Error -15180.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15681
+Error -15194.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15694
+Error -15208.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15708
+Error -15221.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15721
+Error -15235.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15735
+Error -15248.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15749
+Error -15262.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15762
+Error -15275.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15776
+Error -15289.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15789
+Error -15303.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15803
+Error -15316.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15817
+Error -15330.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15830
+Error -15343.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15844
+Error -15357.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15857
+Error -15370.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15871
+Error -15384.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15884
+Error -15398.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15898
+Error -15411.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15912
+Error -15425.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15925
+Error -15438.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15939
+Error -15452.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15952
+Error -15466.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15966
+Error -15479.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 15979
+Error -15493.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 15993
+Error -15506.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16007
+Error -15520.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16020
+Error -15533.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16034
+Error -15547.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16047
+Error -15561.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16061
+Error -15574.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16074
+Error -15588.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16088
+Error -15601.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16102
+Error -15615.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16115
+Error -15628.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16129
+Error -15642.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16142
+Error -15656.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16156
+Error -15669.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16170
+Error -15683.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16183
+Error -15696.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16197
+Error -15710.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16210
+Error -15723.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16224
+Error -15737.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16237
+Error -15751.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16251
+Error -15764.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16265
+Error -15778.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16278
+Error -15791.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16292
+Error -15805.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16305
+Error -15818.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16319
+Error -15832.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16332
+Error -15846.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16346
+Error -15859.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16360
+Error -15873.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16373
+Error -15886.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16387
+Error -15900.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16400
+Error -15913.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16414
+Error -15927.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16427
+Error -15941.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16441
+Error -15954.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16455
+Error -15968.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16468
+Error -15981.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16482
+Error -15995.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16495
+Error -16009.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16509
+Error -16022.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16522
+Error -16036.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16536
+Error -16049.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16550
+Error -16063.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16563
+Error -16076.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16577
+Error -16090.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16590
+Error -16104.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16604
+Error -16117.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16618
+Error -16131.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16631
+Error -16144.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16645
+Error -16158.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16658
+Error -16171.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16672
+Error -16185.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16685
+Error -16199.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16699
+Error -16212.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16713
+Error -16226.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16726
+Error -16239.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16740
+Error -16253.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16753
+Error -16266.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16767
+Error -16280.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16780
+Error -16294.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16794
+Error -16307.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16808
+Error -16321.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16821
+Error -16334.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16835
+Error -16348.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16848
+Error -16362.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16862
+Error -16375.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16875
+Error -16389.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16889
+Error -16402.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16903
+Error -16416.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16916
+Error -16429.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16930
+Error -16443.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16943
+Error -16457.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16957
+Error -16470.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16971
+Error -16484.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 16984
+Error -16497.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 16998
+Error -16511.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17011
+Error -16524.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17025
+Error -16538.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17038
+Error -16552.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17052
+Error -16565.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17066
+Error -16579.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17079
+Error -16592.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17093
+Error -16606.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17106
+Error -16620.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17120
+Error -16633.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17133
+Error -16647.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17147
+Error -16660.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17161
+Error -16674.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17174
+Error -16687.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17188
+Error -16701.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17201
+Error -16715.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17215
+Error -16728.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17229
+Error -16742.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17242
+Error -16755.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17256
+Error -16769.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17269
+Error -16783.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17283
+Error -16796.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17296
+Error -16810.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17310
+Error -16823.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17324
+Error -16837.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17337
+Error -16850.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17351
+Error -16864.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17364
+Error -16878.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17378
+Error -16891.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17392
+Error -16905.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17405
+Error -16918.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17419
+Error -16932.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17432
+Error -16945.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17446
+Error -16959.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17459
+Error -16973.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17473
+Error -16986.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17487
+Error -17000.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17500
+Error -17013.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17514
+Error -17027.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17527
+Error -17041.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17541
+Error -17054.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17554
+Error -17068.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17568
+Error -17081.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17582
+Error -17095.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17595
+Error -17108.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17609
+Error -17122.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17622
+Error -17136.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17636
+Error -17149.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17650
+Error -17163.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17663
+Error -17176.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17677
+Error -17190.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17690
+Error -17203.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17704
+Error -17217.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17717
+Error -17231.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17731
+Error -17244.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17745
+Error -17258.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17758
+Error -17271.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17772
+Error -17285.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17785
+Error -17299.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17799
+Error -17312.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17813
+Error -17326.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17826
+Error -17339.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17840
+Error -17353.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17853
+Error -17366.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17867
+Error -17380.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17880
+Error -17394.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17894
+Error -17407.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17908
+Error -17421.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17921
+Error -17434.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17935
+Error -17448.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17948
+Error -17461.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 17962
+Error -17475.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17975
+Error -17489.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 17989
+Error -17502.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18003
+Error -17516.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18016
+Error -17529.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18030
+Error -17543.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18043
+Error -17557.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18057
+Error -17570.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18071
+Error -17584.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18084
+Error -17597.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18098
+Error -17611.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18111
+Error -17624.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18125
+Error -17638.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18138
+Error -17652.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18152
+Error -17665.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18166
+Error -17679.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18179
+Error -17692.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18193
+Error -17706.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18206
+Error -17719.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18220
+Error -17733.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18233
+Error -17747.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18247
+Error -17760.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18261
+Error -17774.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18274
+Error -17787.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18288
+Error -17801.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18301
+Error -17815.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18315
+Error -17828.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18329
+Error -17842.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18342
+Error -17855.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18356
+Error -17869.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18369
+Error -17882.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18383
+Error -17896.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18396
+Error -17910.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18410
+Error -17923.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18424
+Error -17937.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18437
+Error -17950.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18451
+Error -17964.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18464
+Error -17978.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18478
+Error -17991.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18491
+Error -18005.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18505
+Error -18018.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18519
+Error -18032.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18532
+Error -18045.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18546
+Error -18059.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18559
+Error -18073.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18573
+Error -18086.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18587
+Error -18100.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18600
+Error -18113.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18614
+Error -18127.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18627
+Error -18140.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18641
+Error -18154.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18654
+Error -18168.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18668
+Error -18181.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18682
+Error -18195.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18695
+Error -18208.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18709
+Error -18222.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18722
+Error -18236.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18736
+Error -18249.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18750
+Error -18263.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18763
+Error -18276.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18777
+Error -18290.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18790
+Error -18303.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18804
+Error -18317.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18817
+Error -18331.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18831
+Error -18344.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18845
+Error -18358.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18858
+Error -18371.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18872
+Error -18385.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18885
+Error -18398.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18899
+Error -18412.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18912
+Error -18426.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18926
+Error -18439.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18940
+Error -18453.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18953
+Error -18466.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18967
+Error -18480.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 18980
+Error -18493.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 18994
+Error -18507.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19007
+Error -18521.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19021
+Error -18534.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19035
+Error -18548.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19048
+Error -18561.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19062
+Error -18575.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19075
+Error -18589.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19089
+Error -18602.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19103
+Error -18616.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19116
+Error -18629.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19130
+Error -18643.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19143
+Error -18656.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19157
+Error -18670.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19170
+Error -18684.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19184
+Error -18697.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19198
+Error -18711.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19211
+Error -18724.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19225
+Error -18738.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19238
+Error -18751.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19252
+Error -18765.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19265
+Error -18779.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19279
+Error -18792.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19293
+Error -18806.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19306
+Error -18819.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19320
+Error -18833.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19333
+Error -18847.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19347
+Error -18860.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19360
+Error -18874.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19374
+Error -18887.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19388
+Error -18901.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19401
+Error -18914.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19415
+Error -18928.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19428
+Error -18942.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19442
+Error -18955.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19456
+Error -18969.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19469
+Error -18982.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19483
+Error -18996.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19496
+Error -19009.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19510
+Error -19023.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19523
+Error -19037.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19537
+Error -19050.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19551
+Error -19064.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19564
+Error -19077.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19578
+Error -19091.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19591
+Error -19105.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19605
+Error -19118.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19618
+Error -19132.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19632
+Error -19145.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19646
+Error -19159.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19659
+Error -19172.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19673
+Error -19186.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19686
+Error -19200.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19700
+Error -19213.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19714
+Error -19227.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19727
+Error -19240.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19741
+Error -19254.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19754
+Error -19267.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19768
+Error -19281.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19781
+Error -19295.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19795
+Error -19308.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19809
+Error -19322.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19822
+Error -19335.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19836
+Error -19349.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19849
+Error -19362.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19863
+Error -19376.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19876
+Error -19390.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19890
+Error -19403.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19904
+Error -19417.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19917
+Error -19430.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19931
+Error -19444.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19944
+Error -19458.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19958
+Error -19471.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19972
+Error -19485.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 19985
+Error -19498.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 19999
+Error -19512.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20012
+Error -19525.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20026
+Error -19539.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20039
+Error -19553.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20053
+Error -19566.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20066
+Error -19580.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20080
+Error -19593.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20094
+Error -19607.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20107
+Error -19620.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20121
+Error -19634.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20134
+Error -19648.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20148
+Error -19661.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20161
+Error -19675.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20175
+Error -19688.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20189
+Error -19702.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20202
+Error -19715.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20216
+Error -19729.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20229
+Error -19743.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20243
+Error -19756.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20257
+Error -19770.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20270
+Error -19783.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20284
+Error -19797.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20297
+Error -19810.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20311
+Error -19824.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20324
+Error -19838.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20338
+Error -19851.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20352
+Error -19865.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20365
+Error -19878.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20379
+Error -19892.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20392
+Error -19905.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20406
+Error -19919.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20419
+Error -19933.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20433
+Error -19946.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20447
+Error -19960.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20460
+Error -19974.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20475
+Error -19988.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20488
+Error -20002.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20502
+Error -20015.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20515
+Error -20029.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20529
+Error -20042.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20543
+Error -20056.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20556
+Error -20069.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20570
+Error -20083.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20583
+Error -20097.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20597
+Error -20110.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20611
+Error -20124.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20624
+Error -20137.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20638
+Error -20151.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20651
+Error -20164.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20665
+Error -20178.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20678
+Error -20192.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20692
+Error -20205.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20706
+Error -20219.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20719
+Error -20232.00, Integral: -100.00, Derivate: -13000.00, Output: -255.00
+Setpoint: 500, Position: 20733
+Error -20246.00, Integral: -100.00, Derivate: -14000.00, Output: -255.00
+Setpoint: 500, Position: 20746

@@ -1,0 +1,988 @@
+oot:0x13 (SPI_FAST_FLAS2: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 11 2024 23:08:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a7c4h ( 42948) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001a7ec vaddr=3ffb0000 size=022bch (  8892) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001cab0 vaddr=40080000 size=03568h ( 13672) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15e88h ( 89736) map[0m
+[0;32mI (164) esp_image: segment 4: paddr=00035eb0 vaddr=40083568 size=095b0h ( 38320) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (186) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     PID_Control_DC-Motor[0m
+[0;32mI (216) cpu_start: App version:      1[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 11 2024 23:07:36[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  6c443d2f7...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (242) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (259) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2BF0 len 0002D410 (181 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB18 len 000134E8 (77 KiB): IRAM[0m
+[0;32mI (291) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (298) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (312) main_task: Started on CPU0[0m
+[0;32mI (322) main_task: Calling app_main()[0m
+[0;32mI (322) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (322) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Now: 49747, Last time: 0, deltaT: 49747.00, dt: 0.049747001
+Error 5000.00, Integral: 100.00, Derivate: 100508.57, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+[0;32mI (352) main_task: Returned from app_main()[0m
+Now: 162329, Last time: 49747, deltaT: 112582.00, dt: 0.112581998
+Error 4921.00, Integral: 100.00, Derivate: -701.71, ControlSignal: 255.00
+Setpoint: 5000, Position: 80
+Now: 262329, Last time: 162329, deltaT: 100000.00, dt: 0.100000001
+Error 4795.00, Integral: 100.00, Derivate: -1260.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 206
+Now: 362329, Last time: 262329, deltaT: 100000.00, dt: 0.100000001
+Error 4661.00, Integral: 100.00, Derivate: -1340.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 341
+Now: 462329, Last time: 362329, deltaT: 100000.00, dt: 0.100000001
+Error 4532.00, Integral: 100.00, Derivate: -1290.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 469
+Now: 562329, Last time: 462329, deltaT: 100000.00, dt: 0.100000001
+Error 4401.00, Integral: 100.00, Derivate: -1310.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 601
+Now: 662329, Last time: 562329, deltaT: 100000.00, dt: 0.100000001
+Error 4269.00, Integral: 100.00, Derivate: -1320.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 732
+Now: 762329, Last time: 662329, deltaT: 100000.00, dt: 0.100000001
+Error 4138.00, Integral: 100.00, Derivate: -1310.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 864
+Now: 862329, Last time: 762329, deltaT: 100000.00, dt: 0.100000001
+Error 4005.00, Integral: 100.00, Derivate: -1330.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 996
+Now: 962329, Last time: 862329, deltaT: 100000.00, dt: 0.100000001
+Error 3875.00, Integral: 100.00, Derivate: -1300.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1127
+Now: 1062329, Last time: 962329, deltaT: 100000.00, dt: 0.100000001
+Error 3740.00, Integral: 100.00, Derivate: -1350.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1261
+Now: 1162329, Last time: 1062329, deltaT: 100000.00, dt: 0.100000001
+Error 3610.00, Integral: 100.00, Derivate: -1300.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1392
+Now: 1262329, Last time: 1162329, deltaT: 100000.00, dt: 0.100000001
+Error 3481.00, Integral: 100.00, Derivate: -1290.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1520
+Now: 1362329, Last time: 1262329, deltaT: 100000.00, dt: 0.100000001
+Error 3354.00, Integral: 100.00, Derivate: -1270.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1648
+Now: 1462329, Last time: 1362329, deltaT: 100000.00, dt: 0.100000001
+Error 3220.00, Integral: 100.00, Derivate: -1340.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1782
+Now: 1562329, Last time: 1462329, deltaT: 100000.00, dt: 0.100000001
+Error 3087.00, Integral: 100.00, Derivate: -1330.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1915
+Now: 1662329, Last time: 1562329, deltaT: 100000.00, dt: 0.100000001
+Error 2953.00, Integral: 100.00, Derivate: -1340.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2049
+Now: 1762333, Last time: 1662329, deltaT: 100004.00, dt: 0.100004002
+Error 2820.00, Integral: 100.00, Derivate: -1329.95, ControlSignal: 255.00
+Setpoint: 5000, Position: 2182
+Now: 1862329, Last time: 1762333, deltaT: 99996.00, dt: 0.099996001
+Error 2688.00, Integral: 100.00, Derivate: -1320.05, ControlSignal: 255.00
+Setpoint: 5000, Position: 2313
+Now: 1962329, Last time: 1862329, deltaT: 100000.00, dt: 0.100000001
+Error 2558.00, Integral: 100.00, Derivate: -1300.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2444
+Now: 2062329, Last time: 1962329, deltaT: 100000.00, dt: 0.100000001
+Error 2429.00, Integral: 100.00, Derivate: -1290.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2573
+Now: 2162329, Last time: 2062329, deltaT: 100000.00, dt: 0.100000001
+Error 2298.00, Integral: 100.00, Derivate: -1310.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2704
+Now: 2262329, Last time: 2162329, deltaT: 100000.00, dt: 0.100000001
+Error 2166.00, Integral: 100.00, Derivate: -1320.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2836
+Now: 2362329, Last time: 2262329, deltaT: 100000.00, dt: 0.100000001
+Error 2035.00, Integral: 100.00, Derivate: -1310.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2967
+Now: 2462329, Last time: 2362329, deltaT: 100000.00, dt: 0.100000001
+Error 1903.00, Integral: 100.00, Derivate: -1320.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3098
+Now: 2562329, Last time: 2462329, deltaT: 100000.00, dt: 0.100000001
+Error 1777.00, Integral: 100.00, Derivate: -1260.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3225
+Now: 2662329, Last time: 2562329, deltaT: 100000.00, dt: 0.100000001
+Error 1646.00, Integral: 100.00, Derivate: -1310.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3356
+Now: 2762329, Last time: 2662329, deltaT: 100000.00, dt: 0.100000001
+Error 1515.00, Integral: 100.00, Derivate: -1310.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3487
+Now: 2862329, Last time: 2762329, deltaT: 100000.00, dt: 0.100000001
+Error 1380.00, Integral: 100.00, Derivate: -1350.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3622
+Now: 2962333, Last time: 2862329, deltaT: 100004.00, dt: 0.100004002
+Error 1244.00, Integral: 100.00, Derivate: -1359.95, ControlSignal: 255.00
+Setpoint: 5000, Position: 3758
+Now: 3062329, Last time: 2962333, deltaT: 99996.00, dt: 0.099996001
+Error 1105.00, Integral: 100.00, Derivate: -1390.06, ControlSignal: 255.00
+Setpoint: 5000, Position: 3897
+Now: 3162329, Last time: 3062329, deltaT: 100000.00, dt: 0.100000001
+Error 971.00, Integral: 100.00, Derivate: -1340.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 4031
+Now: 3262329, Last time: 3162329, deltaT: 100000.00, dt: 0.100000001
+Error 838.00, Integral: 100.00, Derivate: -1330.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 4164
+Now: 3362329, Last time: 3262329, deltaT: 100000.00, dt: 0.100000001
+Error 705.00, Integral: 100.00, Derivate: -1330.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 4297
+Now: 3462329, Last time: 3362329, deltaT: 100000.00, dt: 0.100000001
+Error 571.00, Integral: 100.00, Derivate: -1340.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 4431
+Now: 3562329, Last time: 3462329, deltaT: 100000.00, dt: 0.100000001
+Error 438.00, Integral: 100.00, Derivate: -1330.00, ControlSignal: 219.10
+Setpoint: 5000, Position: 4564
+Now: 3662329, Last time: 3562329, deltaT: 100000.00, dt: 0.100000001
+Error 307.00, Integral: 100.00, Derivate: -1310.00, ControlSignal: 153.60
+Setpoint: 5000, Position: 4694
+Now: 3762329, Last time: 3662329, deltaT: 100000.00, dt: 0.100000001
+Error 184.00, Integral: 100.00, Derivate: -1230.00, ControlSignal: 92.10
+Setpoint: 5000, Position: 4817
+Now: 3862333, Last time: 3762329, deltaT: 100004.00, dt: 0.100004002
+Error 74.00, Integral: 100.00, Derivate: -1099.96, ControlSignal: 37.10
+Setpoint: 5000, Position: 4927
+Now: 3962329, Last time: 3862333, deltaT: 99996.00, dt: 0.099996001
+Error -16.00, Integral: 98.40, Derivate: -900.04, ControlSignal: -7.90
+Setpoint: 5000, Position: 5017
+Now: 4062329, Last time: 3962329, deltaT: 100000.00, dt: 0.100000001
+Error -64.00, Integral: 92.00, Derivate: -480.00, ControlSignal: -31.91
+Setpoint: 5000, Position: 5065
+Now: 4162329, Last time: 4062329, deltaT: 100000.00, dt: 0.100000001
+Error -77.00, Integral: 84.30, Derivate: -130.00, ControlSignal: -38.42
+Setpoint: 5000, Position: 5078
+Now: 4262329, Last time: 4162329, deltaT: 100000.00, dt: 0.100000001
+Error -53.00, Integral: 79.00, Derivate: 240.00, ControlSignal: -26.42
+Setpoint: 5000, Position: 5052
+Now: 4362329, Last time: 4262329, deltaT: 100000.00, dt: 0.100000001
+Error 32.00, Integral: 82.20, Derivate: 850.00, ControlSignal: 16.08
+Setpoint: 5000, Position: 4967
+Now: 4462329, Last time: 4362329, deltaT: 100000.00, dt: 0.100000001
+Error 127.00, Integral: 94.90, Derivate: 950.00, ControlSignal: 63.59
+Setpoint: 5000, Position: 4872
+Now: 4562329, Last time: 4462329, deltaT: 100000.00, dt: 0.100000001
+Error 156.00, Integral: 100.00, Derivate: 290.00, ControlSignal: 78.10
+Setpoint: 5000, Position: 4845
+Now: 4662329, Last time: 4562329, deltaT: 100000.00, dt: 0.100000001
+Error 161.00, Integral: 100.00, Derivate: 50.00, ControlSignal: 80.60
+Setpoint: 5000, Position: 4840
+Now: 4762329, Last time: 4662329, deltaT: 100000.00, dt: 0.100000001
+Error 132.00, Integral: 100.00, Derivate: -290.00, ControlSignal: 66.10
+Setpoint: 5000, Position: 4868
+Now: 4862329, Last time: 4762329, deltaT: 100000.00, dt: 0.100000001
+Error 92.00, Integral: 100.00, Derivate: -400.00, ControlSignal: 46.10
+Setpoint: 5000, Position: 4909
+Now: 4962329, Last time: 4862329, deltaT: 100000.00, dt: 0.100000001
+Error 60.00, Integral: 100.00, Derivate: -320.00, ControlSignal: 30.10
+Setpoint: 5000, Position: 4941
+Now: 5062329, Last time: 4962329, deltaT: 100000.00, dt: 0.100000001
+Error 45.00, Integral: 100.00, Derivate: -150.00, ControlSignal: 22.60
+Setpoint: 5000, Position: 4955
+Now: 5162329, Last time: 5062329, deltaT: 100000.00, dt: 0.100000001
+Error 50.00, Integral: 100.00, Derivate: 50.00, ControlSignal: 25.10
+Setpoint: 5000, Position: 4949
+Now: 5262329, Last time: 5162329, deltaT: 100000.00, dt: 0.100000001
+Error 99.00, Integral: 100.00, Derivate: 490.00, ControlSignal: 49.60
+Setpoint: 5000, Position: 4900
+Now: 5362329, Last time: 5262329, deltaT: 100000.00, dt: 0.100000001
+Error 135.00, Integral: 100.00, Derivate: 360.00, ControlSignal: 67.60
+Setpoint: 5000, Position: 4865
+Now: 5462329, Last time: 5362329, deltaT: 100000.00, dt: 0.100000001
+Error 151.00, Integral: 100.00, Derivate: 160.00, ControlSignal: 75.60
+Setpoint: 5000, Position: 4849
+Now: 5562329, Last time: 5462329, deltaT: 100000.00, dt: 0.100000001
+Error 149.00, Integral: 100.00, Derivate: -20.00, ControlSignal: 74.60
+Setpoint: 5000, Position: 4852
+Now: 5662329, Last time: 5562329, deltaT: 100000.00, dt: 0.100000001
+Error 120.00, Integral: 100.00, Derivate: -290.00, ControlSignal: 60.10
+Setpoint: 5000, Position: 4881
+Now: 5762329, Last time: 5662329, deltaT: 100000.00, dt: 0.100000001
+Error 86.00, Integral: 100.00, Derivate: -340.00, ControlSignal: 43.10
+Setpoint: 5000, Position: 4914
+Now: 5862329, Last time: 5762329, deltaT: 100000.00, dt: 0.100000001
+Error 64.00, Integral: 100.00, Derivate: -220.00, ControlSignal: 32.10
+Setpoint: 5000, Position: 4937
+Now: 5962329, Last time: 5862329, deltaT: 100000.00, dt: 0.100000001
+Error 57.00, Integral: 100.00, Derivate: -70.00, ControlSignal: 28.60
+Setpoint: 5000, Position: 4943
+Now: 6062329, Last time: 5962329, deltaT: 100000.00, dt: 0.100000001
+Error 63.00, Integral: 100.00, Derivate: 60.00, ControlSignal: 31.60
+Setpoint: 5000, Position: 4936
+Now: 6162329, Last time: 6062329, deltaT: 100000.00, dt: 0.100000001
+Error 93.00, Integral: 100.00, Derivate: 300.00, ControlSignal: 46.60
+Setpoint: 5000, Position: 4907
+Now: 6262329, Last time: 6162329, deltaT: 100000.00, dt: 0.100000001
+Error 113.00, Integral: 100.00, Derivate: 200.00, ControlSignal: 56.60
+Setpoint: 5000, Position: 4887
+Now: 6362329, Last time: 6262329, deltaT: 100000.00, dt: 0.100000001
+Error 132.00, Integral: 100.00, Derivate: 190.00, ControlSignal: 66.10
+Setpoint: 5000, Position: 4868
+Now: 6462329, Last time: 6362329, deltaT: 100000.00, dt: 0.100000001
+Error 140.00, Integral: 100.00, Derivate: 80.00, ControlSignal: 70.10
+Setpoint: 5000, Position: 4861
+Now: 6562329, Last time: 6462329, deltaT: 100000.00, dt: 0.100000001
+Error 129.00, Integral: 100.00, Derivate: -110.00, ControlSignal: 64.60
+Setpoint: 5000, Position: 4871
+Now: 6662329, Last time: 6562329, deltaT: 100000.00, dt: 0.100000001
+Error 103.00, Integral: 100.00, Derivate: -260.00, ControlSignal: 51.60
+Setpoint: 5000, Position: 4896
+Now: 6762329, Last time: 6662329, deltaT: 100000.00, dt: 0.100000001
+Error 79.00, Integral: 100.00, Derivate: -240.00, ControlSignal: 39.60
+Setpoint: 5000, Position: 4920
+Now: 6862329, Last time: 6762329, deltaT: 100000.00, dt: 0.100000001
+Error 67.00, Integral: 100.00, Derivate: -120.00, ControlSignal: 33.60
+Setpoint: 5000, Position: 4932
+Now: 6962329, Last time: 6862329, deltaT: 100000.00, dt: 0.100000001
+Error 74.00, Integral: 100.00, Derivate: 70.00, ControlSignal: 37.10
+Setpoint: 5000, Position: 4927
+Now: 7062329, Last time: 6962329, deltaT: 100000.00, dt: 0.100000001
+Error 85.00, Integral: 100.00, Derivate: 110.00, ControlSignal: 42.60
+Setpoint: 5000, Position: 4916
+Now: 7162329, Last time: 7062329, deltaT: 100000.00, dt: 0.100000001
+Error 107.00, Integral: 100.00, Derivate: 220.00, ControlSignal: 53.60
+Setpoint: 5000, Position: 4893
+Now: 7262329, Last time: 7162329, deltaT: 100000.00, dt: 0.100000001
+Error 124.00, Integral: 100.00, Derivate: 170.00, ControlSignal: 62.10
+Setpoint: 5000, Position: 4875
+Now: 7362329, Last time: 7262329, deltaT: 100000.00, dt: 0.100000001
+Error 134.00, Integral: 100.00, Derivate: 100.00, ControlSignal: 67.10
+Setpoint: 5000, Position: 4865
+Now: 7462329, Last time: 7362329, deltaT: 100000.00, dt: 0.100000001
+Error 128.00, Integral: 100.00, Derivate: -60.00, ControlSignal: 64.10
+Setpoint: 5000, Position: 4872
+Now: 7562329, Last time: 7462329, deltaT: 100000.00, dt: 0.100000001
+Error 113.00, Integral: 100.00, Derivate: -150.00, ControlSignal: 56.60
+Setpoint: 5000, Position: 4888
+Now: 7662329, Last time: 7562329, deltaT: 100000.00, dt: 0.100000001
+Error 90.00, Integral: 100.00, Derivate: -230.00, ControlSignal: 45.10
+Setpoint: 5000, Position: 4911
+Now: 7762329, Last time: 7662329, deltaT: 100000.00, dt: 0.100000001
+Error 73.00, Integral: 100.00, Derivate: -170.00, ControlSignal: 36.60
+Setpoint: 5000, Position: 4926
+Now: 7862329, Last time: 7762329, deltaT: 100000.00, dt: 0.100000001
+Error 68.00, Integral: 100.00, Derivate: -50.00, ControlSignal: 34.10
+Setpoint: 5000, Position: 4932
+Now: 7962329, Last time: 7862329, deltaT: 100000.00, dt: 0.100000001
+Error 77.00, Integral: 100.00, Derivate: 90.00, ControlSignal: 38.60
+Setpoint: 5000, Position: 4922
+Now: 8062329, Last time: 7962329, deltaT: 100000.00, dt: 0.100000001
+Error 96.00, Integral: 100.00, Derivate: 190.00, ControlSignal: 48.10
+Setpoint: 5000, Position: 4904
+Now: 8162329, Last time: 8062329, deltaT: 100000.00, dt: 0.100000001
+Error 114.00, Integral: 100.00, Derivate: 180.00, ControlSignal: 57.10
+Setpoint: 5000, Position: 4885
+Now: 8262329, Last time: 8162329, deltaT: 100000.00, dt: 0.100000001
+Error 127.00, Integral: 100.00, Derivate: 130.00, ControlSignal: 63.60
+Setpoint: 5000, Position: 4873
+Now: 8362329, Last time: 8262329, deltaT: 100000.00, dt: 0.100000001
+Error 131.00, Integral: 100.00, Derivate: 40.00, ControlSignal: 65.60
+Setpoint: 5000, Position: 4869
+Now: 8462329, Last time: 8362329, deltaT: 100000.00, dt: 0.100000001
+Error 124.00, Integral: 100.00, Derivate: -70.00, ControlSignal: 62.10
+Setpoint: 5000, Position: 4876
+Now: 8562329, Last time: 8462329, deltaT: 100000.00, dt: 0.100000001
+Error 109.00, Integral: 100.00, Derivate: -150.00, ControlSignal: 54.60
+Setpoint: 5000, Position: 4891
+Now: 8662329, Last time: 8562329, deltaT: 100000.00, dt: 0.100000001
+Error 93.00, Integral: 100.00, Derivate: -160.00, ControlSignal: 46.60
+Setpoint: 5000, Position: 4907
+Now: 8762329, Last time: 8662329, deltaT: 100000.00, dt: 0.100000001
+Error 83.00, Integral: 100.00, Derivate: -100.00, ControlSignal: 41.60
+Setpoint: 5000, Position: 4917
+Now: 8862329, Last time: 8762329, deltaT: 100000.00, dt: 0.100000001
+Error 80.00, Integral: 100.00, Derivate: -30.00, ControlSignal: 40.10
+Setpoint: 5000, Position: 4920
+Now: 8962329, Last time: 8862329, deltaT: 100000.00, dt: 0.100000001
+Error 86.00, Integral: 100.00, Derivate: 60.00, ControlSignal: 43.10
+Setpoint: 5000, Position: 4914
+Now: 9062329, Last time: 8962329, deltaT: 100000.00, dt: 0.100000001
+Error 99.00, Integral: 100.00, Derivate: 130.00, ControlSignal: 49.60
+Setpoint: 5000, Position: 4901
+Now: 9162329, Last time: 9062329, deltaT: 100000.00, dt: 0.100000001
+Error 107.00, Integral: 100.00, Derivate: 80.00, ControlSignal: 53.60
+Setpoint: 5000, Position: 4893
+Now: 9262329, Last time: 9162329, deltaT: 100000.00, dt: 0.100000001
+Error 119.00, Integral: 100.00, Derivate: 120.00, ControlSignal: 59.60
+Setpoint: 5000, Position: 4881
+Now: 9362329, Last time: 9262329, deltaT: 100000.00, dt: 0.100000001
+Error 123.00, Integral: 100.00, Derivate: 40.00, ControlSignal: 61.60
+Setpoint: 5000, Position: 4877
+Now: 9462329, Last time: 9362329, deltaT: 100000.00, dt: 0.100000001
+Error 117.00, Integral: 100.00, Derivate: -60.00, ControlSignal: 58.60
+Setpoint: 5000, Position: 4883
+Now: 9562329, Last time: 9462329, deltaT: 100000.00, dt: 0.100000001
+Error 105.00, Integral: 100.00, Derivate: -120.00, ControlSignal: 52.60
+Setpoint: 5000, Position: 4896
+Now: 9662329, Last time: 9562329, deltaT: 100000.00, dt: 0.100000001
+Error 95.00, Integral: 100.00, Derivate: -100.00, ControlSignal: 47.60
+Setpoint: 5000, Position: 4906
+Now: 9762329, Last time: 9662329, deltaT: 100000.00, dt: 0.100000001
+Error 86.00, Integral: 100.00, Derivate: -90.00, ControlSignal: 43.10
+Setpoint: 5000, Position: 4915
+Now: 9862329, Last time: 9762329, deltaT: 100000.00, dt: 0.100000001
+Error 86.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 43.10
+Setpoint: 5000, Position: 4914
+Now: 9962329, Last time: 9862329, deltaT: 100000.00, dt: 0.100000001
+Error 92.00, Integral: 100.00, Derivate: 60.00, ControlSignal: 46.10
+Setpoint: 5000, Position: 4909
+[0;31mE (10352) FreeRTOS: FreeRTOS Task "pid_task" should not return, Aborting now![0m
+
+abort() was called at PC 0x400862cb on core 0
+
+
+Backtrace: 0x4008160a:0x3ffb6510 0x40085a49:0x3ffb6530 0x4008b4a9:0x3ffb6550 0x400862cb:0x3ffb65c0
+
+
+
+
+ELF file SHA256: 6c443d2f7
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 11 2024 23:08:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a7c4h ( 42948) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001a7ec vaddr=3ffb0000 size=022bch (  8892) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001cab0 vaddr=40080000 size=03568h ( 13672) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15e88h ( 89736) map[0m
+[0;32mI (164) esp_image: segment 4: paddr=00035eb0 vaddr=40083568 size=095b0h ( 38320) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (186) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (206) cpu_start: Application information:[0m
+[0;32mI (209) cpu_start: Project name:     PID_Control_DC-Motor[0m
+[0;32mI (216) cpu_start: App version:      1[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 11 2024 23:07:36[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  6c443d2f7...[0m
+[0;32mI (231) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2BF0 len 0002D410 (181 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB18 len 000134E8 (77 KiB): IRAM[0m
+[0;32mI (291) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (298) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (312) main_task: Started on CPU0[0m
+[0;32mI (322) main_task: Calling app_main()[0m
+[0;32mI (322) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (322) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Now: 49747, Last time: 0, deltaT: 49747.00, dt: 0.049747001
+Error 5000.00, Integral: 100.00, Derivate: 100508.57, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+[0;32mI (352) main_task: Returned from app_main()[0m
+Now: 162336, Last time: 49747, deltaT: 112589.00, dt: 0.112589002
+Error 4923.00, Integral: 100.00, Derivate: -683.90, ControlSignal: 255.00
+Setpoint: 5000, Position: 79
+Now: 262336, Last time: 162336, deltaT: 100000.00, dt: 0.100000001
+Error 4805.00, Integral: 100.00, Derivate: -1180.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 196
+Now: 362336, Last time: 262336, deltaT: 100000.00, dt: 0.100000001
+Error 4680.00, Integral: 100.00, Derivate: -1250.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 322
+Now: 462336, Last time: 362336, deltaT: 100000.00, dt: 0.100000001
+Error 4561.00, Integral: 100.00, Derivate: -1190.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 440
+Now: 562336, Last time: 462336, deltaT: 100000.00, dt: 0.100000001
+Error 4443.00, Integral: 100.00, Derivate: -1180.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 559
+Now: 662336, Last time: 562336, deltaT: 100000.00, dt: 0.100000001
+Error 4318.00, Integral: 100.00, Derivate: -1250.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 683
+Now: 762336, Last time: 662336, deltaT: 100000.00, dt: 0.100000001
+Error 4196.00, Integral: 100.00, Derivate: -1220.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 805
+Now: 862336, Last time: 762336, deltaT: 100000.00, dt: 0.100000001
+Error 4076.00, Integral: 100.00, Derivate: -1200.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 926
+Now: 962336, Last time: 862336, deltaT: 100000.00, dt: 0.100000001
+Error 3948.00, Integral: 100.00, Derivate: -1280.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1053
+Now: 1062336, Last time: 962336, deltaT: 100000.00, dt: 0.100000001
+Error 3828.00, Integral: 100.00, Derivate: -1200.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1174
+Now: 1162336, Last time: 1062336, deltaT: 100000.00, dt: 0.100000001
+Error 3710.00, Integral: 100.00, Derivate: -1180.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1292
+Now: 1262336, Last time: 1162336, deltaT: 100000.00, dt: 0.100000001
+Error 3590.00, Integral: 100.00, Derivate: -1200.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1412
+Now: 1362336, Last time: 1262336, deltaT: 100000.00, dt: 0.100000001
+Error 3473.00, Integral: 100.00, Derivate: -1170.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1529
+Now: 1462336, Last time: 1362336, deltaT: 100000.00, dt: 0.100000001
+Error 3353.00, Integral: 100.00, Derivate: -1200.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1648
+Now: 1562336, Last time: 1462336, deltaT: 100000.00, dt: 0.100000001
+Error 3230.00, Integral: 100.00, Derivate: -1230.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1773
+Now: 1662336, Last time: 1562336, deltaT: 100000.00, dt: 0.100000001
+Error 3111.00, Integral: 100.00, Derivate: -1190.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1891
+Now: 1762336, Last time: 1662336, deltaT: 100000.00, dt: 0.100000001
+Error 2989.00, Integral: 100.00, Derivate: -1220.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2013
+Now: 1862336, Last time: 1762336, deltaT: 100000.00, dt: 0.100000001
+Error 2865.00, Integral: 100.00, Derivate: -1240.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2137
+Now: 1962336, Last time: 1862336, deltaT: 100000.00, dt: 0.100000001
+Error 2744.00, Integral: 100.00, Derivate: -1210.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2258
+Now: 2062336, Last time: 1962336, deltaT: 100000.00, dt: 0.100000001
+Error 2619.00, Integral: 100.00, Derivate: -1250.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2382
+Now: 2162336, Last time: 2062336, deltaT: 100000.00, dt: 0.100000001
+Error 2489.00, Integral: 100.00, Derivate: -1300.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2513
+Now: 2262336, Last time: 2162336, deltaT: 100000.00, dt: 0.100000001
+Error 2368.00, Integral: 100.00, Derivate: -1210.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2634
+Now: 2362336, Last time: 2262336, deltaT: 100000.00, dt: 0.100000001
+Error 2244.00, Integral: 100.00, Derivate: -1240.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2758
+Now: 2462336, Last time: 2362336, deltaT: 100000.00, dt: 0.100000001
+Error 2124.00, Integral: 100.00, Derivate: -1200.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2877
+Now: 2562336, Last time: 2462336, deltaT: 100000.00, dt: 0.100000001
+Error 1997.00, Integral: 100.00, Derivate: -1270.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3006
+Now: 2662336, Last time: 2562336, deltaT: 100000.00, dt: 0.100000001
+Error 1873.00, Integral: 100.00, Derivate: -1240.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3129
+Now: 2762336, Last time: 2662336, deltaT: 100000.00, dt: 0.100000001
+Error 1746.00, Integral: 100.00, Derivate: -1270.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3256
+Now: 2862336, Last time: 2762336, deltaT: 100000.00, dt: 0.100000001
+Error 1622.00, Integral: 100.00, Derivate: -1240.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3380
+Now: 2962336, Last time: 2862336, deltaT: 100000.00, dt: 0.100000001
+Error 1496.00, Integral: 100.00, Derivate: -1260.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3506
+Now: 3062336, Last time: 2962336, deltaT: 100000.00, dt: 0.100000001
+Error 1378.00, Integral: 100.00, Derivate: -1180.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3624
+Now: 3162336, Last time: 3062336, deltaT: 100000.00, dt: 0.100000001
+Error 1251.00, Integral: 100.00, Derivate: -1270.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3751
+Now: 3262336, Last time: 3162336, deltaT: 100000.00, dt: 0.100000001
+Error 1127.00, Integral: 100.00, Derivate: -1240.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3874
+Now: 3362336, Last time: 3262336, deltaT: 100000.00, dt: 0.100000001
+Error 1008.00, Integral: 100.00, Derivate: -1190.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3994
+Now: 3462336, Last time: 3362336, deltaT: 100000.00, dt: 0.100000001
+Error 885.00, Integral: 100.00, Derivate: -1230.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 4115
+Now: 3562336, Last time: 3462336, deltaT: 100000.00, dt: 0.100000001
+Error 762.00, Integral: 100.00, Derivate: -1230.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 4240
+Now: 3662336, Last time: 3562336, deltaT: 100000.00, dt: 0.100000001
+Error 635.00, Integral: 100.00, Derivate: -1270.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 4367
+Now: 3762336, Last time: 3662336, deltaT: 100000.00, dt: 0.100000001
+Error 512.00, Integral: 100.00, Derivate: -1230.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 4490
+Now: 3862336, Last time: 3762336, deltaT: 100000.00, dt: 0.100000001
+Error 388.00, Integral: 100.00, Derivate: -1240.00, ControlSignal: 194.10
+Setpoint: 5000, Position: 4612
+Now: 3962336, Last time: 3862336, deltaT: 100000.00, dt: 0.100000001
+Error 259.00, Integral: 100.00, Derivate: -1290.00, ControlSignal: 129.60
+Setpoint: 5000, Position: 4743
+Now: 4062336, Last time: 3962336, deltaT: 100000.00, dt: 0.100000001
+Error 138.00, Integral: 100.00, Derivate: -1210.00, ControlSignal: 69.10
+Setpoint: 5000, Position: 4863
+Now: 4162336, Last time: 4062336, deltaT: 100000.00, dt: 0.100000001
+Error 36.00, Integral: 100.00, Derivate: -1020.00, ControlSignal: 18.10
+Setpoint: 5000, Position: 4965
+Now: 4262336, Last time: 4162336, deltaT: 100000.00, dt: 0.100000001
+Error -46.00, Integral: 95.40, Derivate: -820.00, ControlSignal: -22.90
+Setpoint: 5000, Position: 5046
+Now: 4362336, Last time: 4262336, deltaT: 100000.00, dt: 0.100000001
+Error -76.00, Integral: 87.80, Derivate: -300.00, ControlSignal: -37.91
+Setpoint: 5000, Position: 5076
+Now: 4462336, Last time: 4362336, deltaT: 100000.00, dt: 0.100000001
+Error -80.00, Integral: 79.80, Derivate: -40.00, ControlSignal: -39.92
+Setpoint: 5000, Position: 5080
+Now: 4562336, Last time: 4462336, deltaT: 100000.00, dt: 0.100000001
+Error -110.00, Integral: 68.80, Derivate: -300.00, ControlSignal: -54.93
+Setpoint: 5000, Position: 5110
+Now: 4662336, Last time: 4562336, deltaT: 100000.00, dt: 0.100000001
+Error -97.00, Integral: 59.10, Derivate: 130.00, ControlSignal: -48.44
+Setpoint: 5000, Position: 5097
+Now: 4762336, Last time: 4662336, deltaT: 100000.00, dt: 0.100000001
+Error -76.00, Integral: 51.50, Derivate: 210.00, ControlSignal: -37.95
+Setpoint: 5000, Position: 5076
+Now: 4862336, Last time: 4762336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: 45.20, Derivate: 130.00, ControlSignal: -31.45
+Setpoint: 5000, Position: 5063
+Now: 4962336, Last time: 4862336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: 38.90, Derivate: 0.00, ControlSignal: -31.46
+Setpoint: 5000, Position: 5063
+Now: 5062336, Last time: 4962336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: 32.60, Derivate: 0.00, ControlSignal: -31.47
+Setpoint: 5000, Position: 5063
+Now: 5162336, Last time: 5062336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: 26.30, Derivate: 0.00, ControlSignal: -31.47
+Setpoint: 5000, Position: 5063
+Now: 5262336, Last time: 5162336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: 20.00, Derivate: 0.00, ControlSignal: -31.48
+Setpoint: 5000, Position: 5063
+Now: 5362336, Last time: 5262336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: 13.70, Derivate: 0.00, ControlSignal: -31.49
+Setpoint: 5000, Position: 5063
+Now: 5462336, Last time: 5362336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: 7.40, Derivate: 0.00, ControlSignal: -31.49
+Setpoint: 5000, Position: 5063
+Now: 5562336, Last time: 5462336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: 1.10, Derivate: 0.00, ControlSignal: -31.50
+Setpoint: 5000, Position: 5063
+Now: 5662336, Last time: 5562336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -5.20, Derivate: 0.00, ControlSignal: -31.51
+Setpoint: 5000, Position: 5063
+Now: 5762336, Last time: 5662336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -11.50, Derivate: 0.00, ControlSignal: -31.51
+Setpoint: 5000, Position: 5063
+Now: 5862336, Last time: 5762336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -17.80, Derivate: 0.00, ControlSignal: -31.52
+Setpoint: 5000, Position: 5063
+Now: 5962336, Last time: 5862336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -24.10, Derivate: 0.00, ControlSignal: -31.52
+Setpoint: 5000, Position: 5063
+Now: 6062336, Last time: 5962336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -30.40, Derivate: 0.00, ControlSignal: -31.53
+Setpoint: 5000, Position: 5063
+Now: 6162336, Last time: 6062336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -36.70, Derivate: 0.00, ControlSignal: -31.54
+Setpoint: 5000, Position: 5063
+Now: 6262336, Last time: 6162336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -43.00, Derivate: 0.00, ControlSignal: -31.54
+Setpoint: 5000, Position: 5063
+Now: 6362336, Last time: 6262336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -49.30, Derivate: 0.00, ControlSignal: -31.55
+Setpoint: 5000, Position: 5063
+Now: 6462336, Last time: 6362336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -55.60, Derivate: 0.00, ControlSignal: -31.56
+Setpoint: 5000, Position: 5063
+Now: 6562336, Last time: 6462336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -61.90, Derivate: 0.00, ControlSignal: -31.56
+Setpoint: 5000, Position: 5063
+Now: 6662336, Last time: 6562336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -68.20, Derivate: 0.00, ControlSignal: -31.57
+Setpoint: 5000, Position: 5063
+Now: 6762336, Last time: 6662336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -74.50, Derivate: 0.00, ControlSignal: -31.57
+Setpoint: 5000, Position: 5063
+Now: 6862336, Last time: 6762336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -80.80, Derivate: 0.00, ControlSignal: -31.58
+Setpoint: 5000, Position: 5063
+Now: 6962336, Last time: 6862336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -87.10, Derivate: 0.00, ControlSignal: -31.59
+Setpoint: 5000, Position: 5063
+Now: 7062336, Last time: 6962336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -93.40, Derivate: 0.00, ControlSignal: -31.59
+Setpoint: 5000, Position: 5063
+Now: 7162336, Last time: 7062336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -99.70, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 7262336, Last time: 7162336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 7362336, Last time: 7262336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 7462336, Last time: 7362336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 7562336, Last time: 7462336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 7662336, Last time: 7562336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 7762336, Last time: 7662336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 7862336, Last time: 7762336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 7962336, Last time: 7862336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 8062336, Last time: 7962336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 8162336, Last time: 8062336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 8262336, Last time: 8162336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 8362336, Last time: 8262336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 8462336, Last time: 8362336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 8562336, Last time: 8462336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 8662336, Last time: 8562336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 8762336, Last time: 8662336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 8862336, Last time: 8762336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 8962336, Last time: 8862336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 9062336, Last time: 8962336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 9162336, Last time: 9062336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 9262336, Last time: 9162336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 9362336, Last time: 9262336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 9462336, Last time: 9362336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 9562336, Last time: 9462336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 9662336, Last time: 9562336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 9762336, Last time: 9662336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 9862336, Last time: 9762336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+Now: 9962336, Last time: 9862336, deltaT: 100000.00, dt: 0.100000001
+Error -63.00, Integral: -100.00, Derivate: 0.00, ControlSignal: -31.60
+Setpoint: 5000, Position: 5063
+[0;31mE (10352) FreeRTOS: FreeRTOS Task "pid_task" should not return, Aborting now![0m
+
+abort() was called at PC 0x400862cb on core 0
+
+
+Backtrace: 0x4008160a:0x3ffb6510 0x40085a49:0x3ffb6530 0x4008b4a9:0x3ffb6550 0x400862cb:0x3ffb65c0
+
+
+
+
+ELF file SHA256: 6c443d2f7
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 11 2024 23:08:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a7c4h ( 42948) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001a7ec vaddr=3ffb0000 size=022bch (  8892) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001cab0 vaddr=40080000 size=03568h ( 13672) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15e88h ( 89736) map[0m
+[0;32mI (164) esp_image: segment 4: paddr=00035eb0 vaddr=40083568 size=095b0h ( 38320) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (186) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (206) cpu_start: Application information:[0m
+[0;32mI (209) cpu_start: Project name:     PID_Control_DC-Motor[0m
+[0;32mI (216) cpu_start: App version:      1[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 11 2024 23:07:36[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  6c443d2f7...[0m
+[0;32mI (231) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (242) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2BF0 len 0002D410 (181 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB18 len 000134E8 (77 KiB): IRAM[0m
+[0;32mI (291) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (298) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (312) main_task: Started on CPU0[0m
+[0;32mI (322) main_task: Calling app_main()[0m
+[0;32mI (322) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (322) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Now: 49747, Last time: 0, deltaT: 49747.00, dt: 0.049747001
+Error 5000.00, Integral: 100.00, Derivate: 100508.57, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+[0;32mI (352) main_task: Returned from app_main()[0m
+Now: 162337, Last time: 49747, deltaT: 112590.00, dt: 0.112590000
+Error 4921.00, Integral: 100.00, Derivate: -701.66, ControlSignal: 255.00
+Setpoint: 5000, Position: 81
+Now: 262337, Last time: 162337, deltaT: 100000.00, dt: 0.100000001
+Error 4805.00, Integral: 100.00, Derivate: -1160.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 197
+Now: 362337, Last time: 262337, deltaT: 100000.00, dt: 0.100000001
+Error 4686.00, Integral: 100.00, Derivate: -1190.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 316
+Now: 462337, Last time: 362337, deltaT: 100000.00, dt: 0.100000001
+Error 4563.00, Integral: 100.00, Derivate: -1230.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 439
+Now: 562337, Last time: 462337, deltaT: 100000.00, dt: 0.100000001
+Error 4445.00, Integral: 100.00, Derivate: -1180.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 557
+Now: 662337, Last time: 562337, deltaT: 100000.00, dt: 0.100000001
+Error 4327.00, Integral: 100.00, Derivate: -1180.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 674
+Now: 762337, Last time: 662337, deltaT: 100000.00, dt: 0.100000001
+Error 4208.00, Integral: 100.00, Derivate: -1190.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 794
+Now: 862337, Last time: 762337, deltaT: 100000.00, dt: 0.100000001
+Error 4093.00, Integral: 100.00, Derivate: -1150.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 908
+Now: 962337, Last time: 862337, deltaT: 100000.00, dt: 0.100000001
+Error 3971.00, Integral: 100.00, Derivate: -1220.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1031
+Now: 1062337, Last time: 962337, deltaT: 100000.00, dt: 0.100000001
+Error 3850.00, Integral: 100.00, Derivate: -1210.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1152
+Now: 1162337, Last time: 1062337, deltaT: 100000.00, dt: 0.100000001
+Error 3725.00, Integral: 100.00, Derivate: -1250.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1277
+Now: 1262337, Last time: 1162337, deltaT: 100000.00, dt: 0.100000001
+Error 3600.00, Integral: 100.00, Derivate: -1250.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1400
+Now: 1362337, Last time: 1262337, deltaT: 100000.00, dt: 0.100000001
+Error 3480.00, Integral: 100.00, Derivate: -1200.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1523
+Now: 1462337, Last time: 1362337, deltaT: 100000.00, dt: 0.100000001
+Error 3359.00, Integral: 100.00, Derivate: -1210.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1643
+Now: 1562337, Last time: 1462337, deltaT: 100000.00, dt: 0.100000001
+Error 3234.00, Integral: 100.00, Derivate: -1250.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1767
+Now: 1662337, Last time: 1562337, deltaT: 100000.00, dt: 0.100000001
+Error 3112.00, Integral: 100.00, Derivate: -1220.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 1889
+Now: 1762337, Last time: 1662337, deltaT: 100000.00, dt: 0.100000001
+Error 2996.00, Integral: 100.00, Derivate: -1160.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2006
+Now: 1862337, Last time: 1762337, deltaT: 100000.00, dt: 0.100000001
+Error 2868.00, Integral: 100.00, Derivate: -1280.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2134
+Now: 1962337, Last time: 1862337, deltaT: 100000.00, dt: 0.100000001
+Error 2747.00, Integral: 100.00, Derivate: -1210.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2255
+Now: 2062337, Last time: 1962337, deltaT: 100000.00, dt: 0.100000001
+Error 2626.00, Integral: 100.00, Derivate: -1210.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2376
+Now: 2162341, Last time: 2062337, deltaT: 100004.00, dt: 0.100004002
+Error 2510.00, Integral: 100.00, Derivate: -1159.95, ControlSignal: 255.00
+Setpoint: 5000, Position: 2491
+Now: 2262337, Last time: 2162341, deltaT: 99996.00, dt: 0.099996001
+Error 2391.00, Integral: 100.00, Derivate: -1190.05, ControlSignal: 255.00
+Setpoint: 5000, Position: 2611
+Now: 2362337, Last time: 2262337, deltaT: 100000.00, dt: 0.100000001
+Error 2273.00, Integral: 100.00, Derivate: -1180.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2729
+Now: 2462337, Last time: 2362337, deltaT: 100000.00, dt: 0.100000001
+Error 2155.00, Integral: 100.00, Derivate: -1180.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2847
+Now: 2562337, Last time: 2462337, deltaT: 100000.00, dt: 0.100000001
+Error 2040.00, Integral: 100.00, Derivate: -1150.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 2962
+Now: 2662337, Last time: 2562337, deltaT: 100000.00, dt: 0.100000001
+Error 1925.00, Integral: 100.00, Derivate: -1150.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3077
+Now: 2762337, Last time: 2662337, deltaT: 100000.00, dt: 0.100000001
+Error 1808.00, Integral: 100.00, Derivate: -1170.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3193
+Now: 2862337, Last time: 2762337, deltaT: 100000.00, dt: 0.100000001
+Error 1695.00, Integral: 100.00, Derivate: -1130.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3306
+Now: 2962337, Last time: 2862337, deltaT: 100000.00, dt: 0.100000001
+Error 1581.00, Integral: 100.00, Derivate: -1140.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3422
+Now: 3062337, Last time: 2962337, deltaT: 100000.00, dt: 0.100000001
+Error 1463.00, Integral: 100.00, Derivate: -1180.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3539
+Now: 3162337, Last time: 3062337, deltaT: 100000.00, dt: 0.100000001
+Error 1351.00, Integral: 100.00, Derivate: -1120.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3651
+Now: 3262337, Last time: 3162337, deltaT: 100000.00, dt: 0.100000001
+Error 1237.00, Integral: 100.00, Derivate: -1140.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3764
+Now: 3362337, Last time: 3262337, deltaT: 100000.00, dt: 0.100000001
+Error 1124.00, Integral: 100.00, Derivate: -1130.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3878
+Now: 3462337, Last time: 3362337, deltaT: 100000.00, dt: 0.100000001
+Error 1008.00, Integral: 100.00, Derivate: -1160.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 3994
+Now: 3562337, Last time: 3462337, deltaT: 100000.00, dt: 0.100000001
+Error 893.00, Integral: 100.00, Derivate: -1150.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 4109
+Now: 3662337, Last time: 3562337, deltaT: 100000.00, dt: 0.100000001
+Error 778.00, Integral: 100.00, Derivate: -1150.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 4224
+Now: 3762337, Last time: 3662337, deltaT: 100000.00, dt: 0.100000001
+Error 661.00, Integral: 100.00, Derivate: -1170.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 4341
+Now: 3862337, Last time: 3762337, deltaT: 100000.00, dt: 0.100000001
+Error 535.00, Integral: 100.00, Derivate: -1260.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 4467
+Now: 3962337, Last time: 3862337, deltaT: 100000.00, dt: 0.100000001
+Error 424.00, Integral: 100.00, Derivate: -1110.00, ControlSignal: 212.10
+Setpoint: 5000, Position: 4578
+Now: 4062337, Last time: 3962337, deltaT: 100000.00, dt: 0.100000001
+Error 291.00, Integral: 100.00, Derivate: -1330.00, ControlSignal: 145.60
+Setpoint: 5000, Position: 4711
+Now: 4162337, Last time: 4062337, deltaT: 100000.00, dt: 0.100000001
+Error 172.00, Integral: 100.00, Derivate: -1190.00, ControlSignal: 86.10
+Setpoint: 5000, Position: 4830
+Now: 4262337, Last time: 4162337, deltaT: 100000.00, dt: 0.100000001
+Error 64.00, Integral: 100.00, Derivate: -1080.00, ControlSignal: 32.10
+Setpoint: 5000, Position: 4937
+Now: 4362337, Last time: 4262337, deltaT: 100000.00, dt: 0.100000001
+Error -25.00, Integral: 97.50, Derivate: -890.00, ControlSignal: -12.40
+Setpoint: 5000, Position: 5025
+Now: 4462337, Last time: 4362337, deltaT: 100000.00, dt: 0.100000001
+Error -69.00, Integral: 90.60, Derivate: -440.00, ControlSignal: -34.41
+Setpoint: 5000, Position: 5068
+Now: 4562337, Last time: 4462337, deltaT: 100000.00, dt: 0.100000001
+Error -80.00, Integral: 82.60, Derivate: -110.00, ControlSignal: -39.92
+Setpoint: 5000, Position: 5079
+Now: 4662337, Last time: 4562337, deltaT: 100000.00, dt: 0.100000001
+Error -97.00, Integral: 72.90, Derivate: -170.00, ControlSignal: -48.43
+Setpoint: 5000, Position: 5097
+Now: 4762337, Last time: 4662337, deltaT: 100000.00, dt: 0.100000001
+Error -111.00, Integral: 61.80, Derivate: -140.00, ControlSignal: -55.44
+Setpoint: 5000, Position: 5111
+Now: 4862337, Last time: 4762337, deltaT: 100000.00, dt: 0.100000001
+Error -96.00, Integral: 52.20, Derivate: 150.00, ControlSignal: -47.95
+Setpoint: 5000, Position: 5096
+Now: 4962337, Last time: 4862337, deltaT: 100000.00, dt: 0.100000001
+Error -71.00, Integral: 45.10, Derivate: 250.00, ControlSignal: -35.45
+Setpoint: 5000, Position: 5071
+Now: 5062337, Last time: 4962337, deltaT: 100000.00, dt: 0.100000001
+Error -59.00, Integral: 39.20, Derivate: 120.00, ControlSignal: -29.46
+Setpoint: 5000, Position: 5059
+Now: 5162337, Last time: 5062337, deltaT: 100000.00, dt: 0.100000001
+Error -82.00, Integral: 31.00, Derivate: -230.00, ControlSignal: -40.97
+Setpoint: 5000, Position: 5082
+Now: 5262337, Last time: 5162337, deltaT: 100000.00, dt: 0.100000001
+Error -105.00, Integral: 20.50, Derivate: -230.00, ControlSignal: -52.48
+Setpoint: 5000, Position: 5105
+Now: 5362337, Last time: 5262337, deltaT: 100000.00, dt: 0.100000001
+Error -128.00, Integral: 7.70, Derivate: -230.00, ControlSignal: -63.99
+Setpoint: 5000, Position: 5128
+Now: 5462337, Last time: 5362337, deltaT: 100000.00, dt: 0.100000001
+Error -107.00, Integral: -3.00, Derivate: 210.00, ControlSignal: -53.50
+Setpoint: 5000, Position: 5106
+Now: 5562337, Last time: 5462337, deltaT: 100000.00, dt: 0.100000001
+Error -79.00, Integral: -10.90, Derivate: 280.00, ControlSignal: -39.51
+Setpoint: 5000, Position: 5079
+Now: 5662337, Last time: 5562337, deltaT: 100000.00, dt: 0.100000001
+Error -47.00, Integral: -15.60, Derivate: 320.00, ControlSignal: -23.52
+Setpoint: 5000, Position: 5047
+Now: 5762337, Last time: 5662337, deltaT: 100000.00, dt: 0.100000001
+Error -42.00, Integral: -19.80, Derivate: 50.00, ControlSignal: -21.02
+Setpoint: 5000, Position: 5042
+Now: 5862337, Last time: 5762337, deltaT: 100000.00, dt: 0.100000001
+Error -42.00, Integral: -24.00, Derivate: 0.00, ControlSignal: -21.02
+Setpoint: 5000, Position: 5042
+Now: 5962337, Last time: 5862337, deltaT: 100000.00, dt: 0.100000001
+Error -42.00, Integral: -28.20, Derivate: 0.00, ControlSignal: -21.03
+Setpoint: 5000, Position: 5042
+Now: 6062337, Last time: 5962337, deltaT: 100000.00, dt: 0.100000001
+Error -42.00, Integral: -32.40, Derivate: 0.00, ControlSignal: -21.03
+Setpoint: 5000, Position: 5042
