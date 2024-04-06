@@ -1,4 +1,4 @@
-Update: At present, I haven't completed building the WinForm GUI to send parameters to ESP32 and plot graphs, but I have successfully tested it on Hercules.
+Update: Currently, I have successfully tested 2 operation modes of the motor by sending parameters from the WinForm GUI, but I have not yet completed the task of drawing graphs on the GUI.
 
 This project is the Capstone 1 project that I am working on in this semester 232. The project content is as follows: control the position and velocity of the DC motor JGB37-545 using PID algorithm and PWM technique. WinForm GUI will send parameters: control mode, PID parameters (KP, KI, KD), setpoint, stop_time, and start running to ESP32. The data received from the GUI comes in 2 forms: "M...S...P...I...D...E...T" and "RUN".
 
