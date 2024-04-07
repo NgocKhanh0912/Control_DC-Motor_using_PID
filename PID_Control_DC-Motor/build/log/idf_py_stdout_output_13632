@@ -1,0 +1,1770 @@
+nfigsip: 0, SPIWP:0xee%�(49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG earl�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 11 2024 23:08:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a7a4h ( 42916) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001a7cc vaddr=3ffb0000 size=022ach (  8876) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001ca80 vaddr=40080000 size=03598h ( 13720) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15e80h ( 89728) map[0m
+[0;32mI (164) esp_image: segment 4: paddr=00035ea8 vaddr=40083598 size=09580h ( 38272) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (186) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     PID_Control_DC-Motor[0m
+[0;32mI (216) cpu_start: App version:      1[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 11 2024 23:07:36[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  1170b0b48...[0m
+[0;32mI (231) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (242) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2BD8 len 0002D428 (181 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB18 len 000134E8 (77 KiB): IRAM[0m
+[0;32mI (291) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (298) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (312) main_task: Started on CPU0[0m
+[0;32mI (322) main_task: Calling app_main()[0m
+[0;32mI (322) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (322) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+dt: 0.00
+Error 5000.00, Integral: 5.00, Derivate: 5000000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+[0;32mI (342) main_task: Returned from app_main()[0m
+dt: 0.00
+Error 5000.00, Integral: 10.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 15.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 20.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 25.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 30.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 35.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 40.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 45.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 50.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 55.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 60.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 65.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 70.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 75.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 80.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 85.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 90.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 95.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 5000.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 0
+dt: 0.00
+Error 4921.00, Integral: 100.00, Derivate: -79000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 80
+dt: 0.00
+Error 4945.00, Integral: 100.00, Derivate: 24000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 55
+dt: 0.00
+Error 4910.00, Integral: 100.00, Derivate: -35000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 90
+dt: 0.00
+Error 4940.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 60
+dt: 0.00
+Error 4905.00, Integral: 100.00, Derivate: -35000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 95
+dt: 0.00
+Error 4935.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 64
+dt: 0.00
+Error 4901.00, Integral: 100.00, Derivate: -34000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 100
+dt: 0.00
+Error 4931.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 69
+dt: 0.00
+Error 4895.00, Integral: 100.00, Derivate: -36000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 105
+dt: 0.00
+Error 4927.00, Integral: 100.00, Derivate: 32000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 73
+dt: 0.00
+Error 4895.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 106
+dt: 0.00
+Error 4925.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 74
+dt: 0.00
+Error 4891.00, Integral: 100.00, Derivate: -34000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 110
+dt: 0.00
+Error 4920.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 79
+dt: 0.00
+Error 4887.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 114
+dt: 0.00
+Error 4917.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 83
+dt: 0.00
+Error 4884.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 117
+dt: 0.00
+Error 4914.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 85
+dt: 0.00
+Error 4881.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 119
+dt: 0.00
+Error 4912.00, Integral: 100.00, Derivate: 31000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 87
+dt: 0.00
+Error 4878.00, Integral: 100.00, Derivate: -34000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 122
+dt: 0.00
+Error 4910.00, Integral: 100.00, Derivate: 32000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 90
+dt: 0.00
+Error 4876.00, Integral: 100.00, Derivate: -34000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 124
+dt: 0.00
+Error 4906.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 93
+dt: 0.00
+Error 4873.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 127
+dt: 0.00
+Error 4902.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 97
+dt: 0.00
+Error 4870.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 131
+dt: 0.00
+Error 4899.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 101
+dt: 0.00
+Error 4864.00, Integral: 100.00, Derivate: -35000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 136
+dt: 0.00
+Error 4893.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 106
+dt: 0.00
+Error 4861.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 139
+dt: 0.00
+Error 4892.00, Integral: 100.00, Derivate: 31000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 108
+dt: 0.00
+Error 4859.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 141
+dt: 0.00
+Error 4889.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 111
+dt: 0.00
+Error 4856.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 144
+dt: 0.00
+Error 4885.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 115
+dt: 0.00
+Error 4853.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 148
+dt: 0.00
+Error 4882.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 117
+dt: 0.00
+Error 4848.00, Integral: 100.00, Derivate: -34000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 152
+dt: 0.00
+Error 4878.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 122
+dt: 0.00
+Error 4846.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 155
+dt: 0.00
+Error 4876.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 124
+dt: 0.00
+Error 4843.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 157
+dt: 0.00
+Error 4873.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 127
+dt: 0.00
+Error 4840.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 160
+dt: 0.00
+Error 4870.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 130
+dt: 0.00
+Error 4838.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 163
+dt: 0.00
+Error 4867.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 132
+dt: 0.00
+Error 4833.00, Integral: 100.00, Derivate: -34000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 167
+dt: 0.00
+Error 4862.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 137
+dt: 0.00
+Error 4830.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 171
+dt: 0.00
+Error 4860.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 140
+dt: 0.00
+Error 4826.00, Integral: 100.00, Derivate: -34000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 174
+dt: 0.00
+Error 4856.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 144
+dt: 0.00
+Error 4823.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 177
+dt: 0.00
+Error 4852.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 148
+dt: 0.00
+Error 4820.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 181
+dt: 0.00
+Error 4849.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 150
+dt: 0.00
+Error 4815.00, Integral: 100.00, Derivate: -34000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 185
+dt: 0.00
+Error 4844.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 155
+dt: 0.00
+Error 4812.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 189
+dt: 0.00
+Error 4841.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 159
+dt: 0.00
+Error 4808.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 192
+dt: 0.00
+Error 4838.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 162
+dt: 0.00
+Error 4805.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 195
+dt: 0.00
+Error 4834.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 166
+dt: 0.00
+Error 4802.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 199
+dt: 0.00
+Error 4831.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 168
+dt: 0.00
+Error 4796.00, Integral: 100.00, Derivate: -35000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 204
+dt: 0.00
+Error 4825.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 174
+dt: 0.00
+Error 4792.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 209
+dt: 0.00
+Error 4821.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 179
+dt: 0.00
+Error 4788.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 212
+dt: 0.00
+Error 4818.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 182
+dt: 0.00
+Error 4785.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 215
+dt: 0.00
+Error 4814.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 186
+dt: 0.00
+Error 4781.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 220
+dt: 0.00
+Error 4811.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 188
+dt: 0.00
+Error 4778.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 223
+dt: 0.00
+Error 4808.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 192
+dt: 0.00
+Error 4776.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 224
+dt: 0.00
+Error 4805.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 195
+dt: 0.00
+Error 4771.00, Integral: 100.00, Derivate: -34000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 229
+dt: 0.00
+Error 4801.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 199
+dt: 0.00
+Error 4770.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 231
+dt: 0.00
+Error 4799.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 201
+dt: 0.00
+Error 4767.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 234
+dt: 0.00
+Error 4797.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 202
+dt: 0.00
+Error 4764.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 237
+dt: 0.00
+Error 4793.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 206
+dt: 0.00
+Error 4761.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 239
+dt: 0.00
+Error 4790.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 210
+dt: 0.00
+Error 4756.00, Integral: 100.00, Derivate: -34000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 244
+dt: 0.00
+Error 4785.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 214
+dt: 0.00
+Error 4753.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 248
+dt: 0.00
+Error 4782.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 218
+dt: 0.00
+Error 4750.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 250
+dt: 0.00
+Error 4779.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 221
+dt: 0.00
+Error 4746.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 255
+dt: 0.00
+Error 4775.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 224
+dt: 0.00
+Error 4743.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 257
+dt: 0.00
+Error 4772.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 228
+dt: 0.00
+Error 4740.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 261
+dt: 0.00
+Error 4768.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 231
+dt: 0.00
+Error 4736.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 265
+dt: 0.00
+Error 4764.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 235
+dt: 0.00
+Error 4733.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 267
+dt: 0.00
+Error 4763.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 236
+dt: 0.00
+Error 4731.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 270
+dt: 0.00
+Error 4760.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 240
+dt: 0.00
+Error 4728.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 272
+dt: 0.00
+Error 4757.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 243
+dt: 0.00
+Error 4725.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 276
+dt: 0.00
+Error 4754.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 245
+dt: 0.00
+Error 4722.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 279
+dt: 0.00
+Error 4751.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 249
+dt: 0.00
+Error 4718.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 282
+dt: 0.00
+Error 4747.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 253
+dt: 0.00
+Error 4715.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 285
+dt: 0.00
+Error 4743.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 256
+dt: 0.00
+Error 4711.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 289
+dt: 0.00
+Error 4740.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 260
+dt: 0.00
+Error 4708.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 293
+dt: 0.00
+Error 4737.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 262
+dt: 0.00
+Error 4705.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 295
+dt: 0.00
+Error 4733.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 266
+dt: 0.00
+Error 4701.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 300
+dt: 0.00
+Error 4730.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 270
+dt: 0.00
+Error 4698.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 302
+dt: 0.00
+Error 4726.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 273
+dt: 0.00
+Error 4694.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 306
+dt: 0.00
+Error 4723.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 277
+dt: 0.00
+Error 4691.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 310
+dt: 0.00
+Error 4720.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 279
+dt: 0.00
+Error 4688.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 312
+dt: 0.00
+Error 4717.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 283
+dt: 0.00
+Error 4685.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 316
+dt: 0.00
+Error 4714.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 286
+dt: 0.00
+Error 4682.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 318
+dt: 0.00
+Error 4710.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 289
+dt: 0.00
+Error 4678.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 322
+dt: 0.00
+Error 4708.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 292
+dt: 0.00
+Error 4675.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 325
+dt: 0.00
+Error 4704.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 296
+dt: 0.00
+Error 4673.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 327
+dt: 0.00
+Error 4702.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 298
+dt: 0.00
+Error 4671.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 330
+dt: 0.00
+Error 4700.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 299
+dt: 0.00
+Error 4667.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 334
+dt: 0.00
+Error 4697.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 303
+dt: 0.00
+Error 4667.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 333
+dt: 0.00
+Error 4695.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 304
+dt: 0.00
+Error 4663.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 338
+dt: 0.00
+Error 4692.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 307
+dt: 0.00
+Error 4659.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 341
+dt: 0.00
+Error 4687.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 312
+dt: 0.00
+Error 4655.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 346
+dt: 0.00
+Error 4684.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 316
+dt: 0.00
+Error 4652.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 349
+dt: 0.00
+Error 4681.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 318
+dt: 0.00
+Error 4649.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 351
+dt: 0.00
+Error 4677.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 322
+dt: 0.00
+Error 4646.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 354
+dt: 0.00
+Error 4674.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 325
+dt: 0.00
+Error 4642.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 358
+dt: 0.00
+Error 4670.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 329
+dt: 0.00
+Error 4638.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 363
+dt: 0.00
+Error 4667.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 333
+dt: 0.00
+Error 4635.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 365
+dt: 0.00
+Error 4663.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 336
+dt: 0.00
+Error 4630.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 370
+dt: 0.00
+Error 4660.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 339
+dt: 0.00
+Error 4628.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 373
+dt: 0.00
+Error 4657.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 342
+dt: 0.00
+Error 4629.00, Integral: 100.00, Derivate: -28000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 372
+dt: 0.00
+Error 4658.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 341
+dt: 0.00
+Error 4626.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 374
+dt: 0.00
+Error 4654.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 345
+dt: 0.00
+Error 4622.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 379
+dt: 0.00
+Error 4651.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 348
+dt: 0.00
+Error 4619.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 382
+dt: 0.00
+Error 4648.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 351
+dt: 0.00
+Error 4617.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 384
+dt: 0.00
+Error 4646.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 353
+dt: 0.00
+Error 4614.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 387
+dt: 0.00
+Error 4643.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 356
+dt: 0.00
+Error 4614.00, Integral: 100.00, Derivate: -29000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 387
+dt: 0.00
+Error 4643.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 357
+dt: 0.00
+Error 4612.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 389
+dt: 0.00
+Error 4641.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 359
+dt: 0.00
+Error 4609.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 392
+dt: 0.00
+Error 4638.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 361
+dt: 0.00
+Error 4607.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 394
+dt: 0.00
+Error 4637.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 363
+dt: 0.00
+Error 4605.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 395
+dt: 0.00
+Error 4635.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 365
+dt: 0.00
+Error 4604.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 396
+dt: 0.00
+Error 4632.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 367
+dt: 0.00
+Error 4600.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 400
+dt: 0.00
+Error 4628.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 371
+dt: 0.00
+Error 4596.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 404
+dt: 0.00
+Error 4626.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 374
+dt: 0.00
+Error 4594.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 407
+dt: 0.00
+Error 4623.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 377
+dt: 0.00
+Error 4590.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 410
+dt: 0.00
+Error 4618.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 382
+dt: 0.00
+Error 4586.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 414
+dt: 0.00
+Error 4614.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 385
+dt: 0.00
+Error 4582.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 418
+dt: 0.00
+Error 4610.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 390
+dt: 0.00
+Error 4579.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 422
+dt: 0.00
+Error 4608.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 392
+dt: 0.00
+Error 4577.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 424
+dt: 0.00
+Error 4606.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 394
+dt: 0.00
+Error 4574.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 427
+dt: 0.00
+Error 4601.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 399
+dt: 0.00
+Error 4570.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 430
+dt: 0.00
+Error 4598.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 402
+dt: 0.00
+Error 4567.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 434
+dt: 0.00
+Error 4596.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 404
+dt: 0.00
+Error 4566.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 435
+dt: 0.00
+Error 4595.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 405
+dt: 0.00
+Error 4564.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 437
+dt: 0.00
+Error 4593.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 407
+dt: 0.00
+Error 4559.00, Integral: 100.00, Derivate: -34000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 441
+dt: 0.00
+Error 4587.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 413
+dt: 0.00
+Error 4556.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 444
+dt: 0.00
+Error 4584.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 416
+dt: 0.00
+Error 4552.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 448
+dt: 0.00
+Error 4581.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 418
+dt: 0.00
+Error 4550.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 450
+dt: 0.00
+Error 4578.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 422
+dt: 0.00
+Error 4546.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 455
+dt: 0.00
+Error 4575.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 425
+dt: 0.00
+Error 4543.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 458
+dt: 0.00
+Error 4572.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 427
+dt: 0.00
+Error 4542.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 459
+dt: 0.00
+Error 4570.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 429
+dt: 0.00
+Error 4537.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 463
+dt: 0.00
+Error 4565.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 434
+dt: 0.00
+Error 4533.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 468
+dt: 0.00
+Error 4562.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 438
+dt: 0.00
+Error 4531.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 470
+dt: 0.00
+Error 4559.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 441
+dt: 0.00
+Error 4527.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 473
+dt: 0.00
+Error 4556.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 444
+dt: 0.00
+Error 4525.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 475
+dt: 0.00
+Error 4555.00, Integral: 100.00, Derivate: 30000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 445
+dt: 0.00
+Error 4524.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 477
+dt: 0.00
+Error 4552.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 447
+dt: 0.00
+Error 4520.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 481
+dt: 0.00
+Error 4548.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 451
+dt: 0.00
+Error 4517.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 484
+dt: 0.00
+Error 4546.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 454
+dt: 0.00
+Error 4515.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 486
+dt: 0.00
+Error 4544.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 456
+dt: 0.00
+Error 4512.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 488
+dt: 0.00
+Error 4540.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 460
+dt: 0.00
+Error 4509.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 492
+dt: 0.00
+Error 4538.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 462
+dt: 0.00
+Error 4506.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 495
+dt: 0.00
+Error 4535.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 464
+dt: 0.00
+Error 4503.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 497
+dt: 0.00
+Error 4531.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 468
+dt: 0.00
+Error 4499.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 501
+dt: 0.00
+Error 4527.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 473
+dt: 0.00
+Error 4495.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 505
+dt: 0.00
+Error 4523.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 476
+dt: 0.00
+Error 4493.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 508
+dt: 0.00
+Error 4521.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 479
+dt: 0.00
+Error 4489.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 511
+dt: 0.00
+Error 4517.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 483
+dt: 0.00
+Error 4487.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 514
+dt: 0.00
+Error 4516.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 484
+dt: 0.00
+Error 4484.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 516
+dt: 0.00
+Error 4513.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 487
+dt: 0.00
+Error 4481.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 519
+dt: 0.00
+Error 4510.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 489
+dt: 0.00
+Error 4478.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 523
+dt: 0.00
+Error 4506.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 494
+dt: 0.00
+Error 4471.00, Integral: 100.00, Derivate: -35000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 529
+dt: 0.00
+Error 4499.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 501
+dt: 0.00
+Error 4469.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 531
+dt: 0.00
+Error 4497.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 503
+dt: 0.00
+Error 4466.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 535
+dt: 0.00
+Error 4493.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 506
+dt: 0.00
+Error 4462.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 539
+dt: 0.00
+Error 4490.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 509
+dt: 0.00
+Error 4459.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 541
+dt: 0.00
+Error 4487.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 513
+dt: 0.00
+Error 4455.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 545
+dt: 0.00
+Error 4483.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 516
+dt: 0.00
+Error 4451.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 550
+dt: 0.00
+Error 4479.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 520
+dt: 0.00
+Error 4448.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 552
+dt: 0.00
+Error 4476.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 523
+dt: 0.00
+Error 4444.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 556
+dt: 0.00
+Error 4473.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 527
+dt: 0.00
+Error 4440.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 560
+dt: 0.00
+Error 4467.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 532
+dt: 0.00
+Error 4436.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 565
+dt: 0.00
+Error 4465.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 535
+dt: 0.00
+Error 4433.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 567
+dt: 0.00
+Error 4461.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 539
+dt: 0.00
+Error 4430.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 571
+dt: 0.00
+Error 4458.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 541
+dt: 0.00
+Error 4426.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 575
+dt: 0.00
+Error 4454.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 545
+dt: 0.00
+Error 4423.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 577
+dt: 0.00
+Error 4450.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 549
+dt: 0.00
+Error 4419.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 582
+dt: 0.00
+Error 4446.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 553
+dt: 0.00
+Error 4415.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 585
+dt: 0.00
+Error 4443.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 556
+dt: 0.00
+Error 4411.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 589
+dt: 0.00
+Error 4439.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 560
+dt: 0.00
+Error 4407.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 594
+dt: 0.00
+Error 4434.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 566
+dt: 0.00
+Error 4403.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 598
+dt: 0.00
+Error 4432.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 568
+dt: 0.00
+Error 4401.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 600
+dt: 0.00
+Error 4430.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 570
+dt: 0.00
+Error 4398.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 602
+dt: 0.00
+Error 4425.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 574
+dt: 0.00
+Error 4394.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 607
+dt: 0.00
+Error 4421.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 578
+dt: 0.00
+Error 4389.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 611
+dt: 0.00
+Error 4418.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 582
+dt: 0.00
+Error 4386.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 614
+dt: 0.00
+Error 4413.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 586
+dt: 0.00
+Error 4381.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 620
+dt: 0.00
+Error 4408.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 591
+dt: 0.00
+Error 4378.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 622
+dt: 0.00
+Error 4406.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 593
+dt: 0.00
+Error 4375.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 626
+dt: 0.00
+Error 4402.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 597
+dt: 0.00
+Error 4370.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 631
+dt: 0.00
+Error 4398.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 601
+dt: 0.00
+Error 4368.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 633
+dt: 0.00
+Error 4395.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 604
+dt: 0.00
+Error 4364.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 637
+dt: 0.00
+Error 4393.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 607
+dt: 0.00
+Error 4361.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 639
+dt: 0.00
+Error 4389.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 610
+dt: 0.00
+Error 4358.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 643
+dt: 0.00
+Error 4386.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 613
+dt: 0.00
+Error 4354.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 646
+dt: 0.00
+Error 4383.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 617
+dt: 0.00
+Error 4351.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 649
+dt: 0.00
+Error 4378.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 621
+dt: 0.00
+Error 4347.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 654
+dt: 0.00
+Error 4376.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 624
+dt: 0.00
+Error 4344.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 656
+dt: 0.00
+Error 4371.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 628
+dt: 0.00
+Error 4340.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 661
+dt: 0.00
+Error 4368.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 632
+dt: 0.00
+Error 4336.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 664
+dt: 0.00
+Error 4365.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 635
+dt: 0.00
+Error 4333.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 667
+dt: 0.00
+Error 4360.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 639
+dt: 0.00
+Error 4329.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 672
+dt: 0.00
+Error 4358.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 642
+dt: 0.00
+Error 4327.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 673
+dt: 0.00
+Error 4354.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 645
+dt: 0.00
+Error 4323.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 678
+dt: 0.00
+Error 4351.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 649
+dt: 0.00
+Error 4319.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 681
+dt: 0.00
+Error 4348.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 652
+dt: 0.00
+Error 4317.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 684
+dt: 0.00
+Error 4344.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 656
+dt: 0.00
+Error 4313.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 688
+dt: 0.00
+Error 4342.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 658
+dt: 0.00
+Error 4311.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 689
+dt: 0.00
+Error 4338.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 661
+dt: 0.00
+Error 4307.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 694
+dt: 0.00
+Error 4335.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 665
+dt: 0.00
+Error 4304.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 696
+dt: 0.00
+Error 4332.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 667
+dt: 0.00
+Error 4301.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 700
+dt: 0.00
+Error 4328.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 671
+dt: 0.00
+Error 4297.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 704
+dt: 0.00
+Error 4326.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 674
+dt: 0.00
+Error 4295.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 705
+dt: 0.00
+Error 4323.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 677
+dt: 0.00
+Error 4292.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 709
+dt: 0.00
+Error 4320.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 680
+dt: 0.00
+Error 4289.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 711
+dt: 0.00
+Error 4317.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 683
+dt: 0.00
+Error 4286.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 715
+dt: 0.00
+Error 4314.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 686
+dt: 0.00
+Error 4285.00, Integral: 100.00, Derivate: -29000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 716
+dt: 0.00
+Error 4314.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 686
+dt: 0.00
+Error 4283.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 717
+dt: 0.00
+Error 4310.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 689
+dt: 0.00
+Error 4279.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 722
+dt: 0.00
+Error 4307.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 693
+dt: 0.00
+Error 4275.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 725
+dt: 0.00
+Error 4304.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 696
+dt: 0.00
+Error 4273.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 728
+dt: 0.00
+Error 4299.00, Integral: 100.00, Derivate: 26000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 701
+dt: 0.00
+Error 4268.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 733
+dt: 0.00
+Error 4297.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 703
+dt: 0.00
+Error 4266.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 734
+dt: 0.00
+Error 4293.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 706
+dt: 0.00
+Error 4262.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 739
+dt: 0.00
+Error 4290.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 710
+dt: 0.00
+Error 4259.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 741
+dt: 0.00
+Error 4288.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 712
+dt: 0.00
+Error 4257.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 744
+dt: 0.00
+Error 4283.00, Integral: 100.00, Derivate: 26000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 717
+dt: 0.00
+Error 4251.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 750
+dt: 0.00
+Error 4280.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 720
+dt: 0.00
+Error 4247.00, Integral: 100.00, Derivate: -33000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 753
+dt: 0.00
+Error 4274.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 726
+dt: 0.00
+Error 4243.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 758
+dt: 0.00
+Error 4271.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 729
+dt: 0.00
+Error 4240.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 760
+dt: 0.00
+Error 4268.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 731
+dt: 0.00
+Error 4237.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 763
+dt: 0.00
+Error 4265.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 735
+dt: 0.00
+Error 4234.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 767
+dt: 0.00
+Error 4263.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 737
+dt: 0.00
+Error 4232.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 768
+dt: 0.00
+Error 4260.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 740
+dt: 0.00
+Error 4228.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 773
+dt: 0.00
+Error 4256.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 744
+dt: 0.00
+Error 4225.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 775
+dt: 0.00
+Error 4254.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 746
+dt: 0.00
+Error 4223.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 777
+dt: 0.00
+Error 4250.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 750
+dt: 0.00
+Error 4220.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 781
+dt: 0.00
+Error 4249.00, Integral: 100.00, Derivate: 29000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 751
+dt: 0.00
+Error 4218.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 782
+dt: 0.00
+Error 4245.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 755
+dt: 0.00
+Error 4215.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 786
+dt: 0.00
+Error 4243.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 757
+dt: 0.00
+Error 4212.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 788
+dt: 0.00
+Error 4240.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 760
+dt: 0.00
+Error 4209.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 792
+dt: 0.00
+Error 4236.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 764
+dt: 0.00
+Error 4207.00, Integral: 100.00, Derivate: -29000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 794
+dt: 0.00
+Error 4235.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 764
+dt: 0.00
+Error 4205.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 795
+dt: 0.00
+Error 4232.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 768
+dt: 0.00
+Error 4202.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 798
+dt: 0.00
+Error 4230.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 770
+dt: 0.00
+Error 4199.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 801
+dt: 0.00
+Error 4227.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 773
+dt: 0.00
+Error 4197.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 804
+dt: 0.00
+Error 4224.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 776
+dt: 0.00
+Error 4195.00, Integral: 100.00, Derivate: -29000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 806
+dt: 0.00
+Error 4222.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 778
+dt: 0.00
+Error 4192.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 809
+dt: 0.00
+Error 4220.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 780
+dt: 0.00
+Error 4190.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 811
+dt: 0.00
+Error 4217.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 782
+dt: 0.00
+Error 4185.00, Integral: 100.00, Derivate: -32000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 815
+dt: 0.00
+Error 4213.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 786
+dt: 0.00
+Error 4182.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 819
+dt: 0.00
+Error 4209.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 790
+dt: 0.00
+Error 4178.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 822
+dt: 0.00
+Error 4206.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 793
+dt: 0.00
+Error 4176.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 824
+dt: 0.00
+Error 4203.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 797
+dt: 0.00
+Error 4172.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 828
+dt: 0.00
+Error 4200.00, Integral: 100.00, Derivate: 28000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 800
+dt: 0.00
+Error 4170.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 831
+dt: 0.00
+Error 4196.00, Integral: 100.00, Derivate: 26000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 804
+dt: 0.00
+Error 4166.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 835
+dt: 0.00
+Error 4193.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 807
+dt: 0.00
+Error 4163.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 838
+dt: 0.00
+Error 4190.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 810
+dt: 0.00
+Error 4160.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 840
+dt: 0.00
+Error 4187.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 813
+dt: 0.00
+Error 4156.00, Integral: 100.00, Derivate: -31000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 844
+dt: 0.00
+Error 4183.00, Integral: 100.00, Derivate: 27000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 816
+dt: 0.00
+Error 4154.00, Integral: 100.00, Derivate: -29000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 847
+dt: 0.00
+Error 4180.00, Integral: 100.00, Derivate: 26000.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 819
+dt: 0.00
+Error 4150.00, Integral: 100.00, Derivate: -30000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 851
+dt: 0.00
+Error 4097.00, Integral: 100.00, Derivate: -53000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 903
+dt: 0.00
+Error 4073.00, Integral: 100.00, Derivate: -24000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 927
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: -4000.00, ControlSignal: -255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
+dt: 0.00
+Error 4069.00, Integral: 100.00, Derivate: 0.00, ControlSignal: 255.00
+Setpoint: 5000, Position: 931
