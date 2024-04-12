@@ -24,4 +24,4 @@ b) The string "RUN" is used to instruct ESP32 to start the motor.
 2. The data transmitted from ESP32 to the GUI has the format: "@...&...#", where:
    - The value between '@' and '&' represents the value of the setpoint.
    - The value between '&' and '#' represents the value of the current response.
-     The GUI will parse this frame, extract the data, and draw the response graph 
+   - The GUI will parse this frame, extract the data, and draw the response graph 
