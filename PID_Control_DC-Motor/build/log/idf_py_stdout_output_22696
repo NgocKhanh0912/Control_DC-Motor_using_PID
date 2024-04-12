@@ -1,0 +1,236 @@
+nfigsip: 0, SPIWP:0xeej%�(49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 11 2024 23:08:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a784h ( 42884) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001a7ac vaddr=3ffb0000 size=022ach (  8876) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001ca60 vaddr=40080000 size=035b8h ( 13752) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15e2ch ( 89644) map[0m
+[0;32mI (164) esp_image: segment 4: paddr=00035e54 vaddr=400835b8 size=09560h ( 38240) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (186) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (209) cpu_start: Project name:     PID_Control_DC-Motor[0m
+[0;32mI (216) cpu_start: App version:      1[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 11 2024 23:07:36[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  e1ecf1cf4...[0m
+[0;32mI (231) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (242) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2BD8 len 0002D428 (181 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB18 len 000134E8 (77 KiB): IRAM[0m
+[0;32mI (291) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (298) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (312) main_task: Started on CPU0[0m
+[0;32mI (322) main_task: Calling app_main()[0m
+[0;32mI (322) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (322) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Error 500.00, Integral: 66.50, Derivate: 3759.40, Output: 1832.50
+Setpoint: 500, Position: 0
+[0;32mI (342) main_task: Returned from app_main()[0m
+Error 1832.00, Integral: 1904.00, Derivate: 1328.02, Output: 15015.98
+Setpoint: 500, Position: -1333
+Error 3227.00, Integral: 5131.00, Derivate: 1395.00, Output: 35335.98
+Setpoint: 500, Position: -2727
+Error 4617.00, Integral: 9748.00, Derivate: 1390.00, Output: 62590.98
+Setpoint: 500, Position: -4118
+Error 6015.00, Integral: 15763.00, Derivate: 1398.00, Output: 96859.98
+Setpoint: 500, Position: -5516
+Error 7403.00, Integral: 23166.00, Derivate: 1388.00, Output: 138038.98
+Setpoint: 500, Position: -6904
+Error 8779.00, Integral: 31945.00, Derivate: 1376.00, Output: 186061.98
+Setpoint: 500, Position: -8279
+Error 10155.00, Integral: 42100.00, Derivate: 1376.00, Output: 240964.98
+Setpoint: 500, Position: -9656
+Error 11554.00, Integral: 53654.00, Derivate: 1399.00, Output: 302931.97
+Setpoint: 500, Position: -11054
+Error 12956.00, Integral: 66610.00, Derivate: 1402.00, Output: 371918.00
+Setpoint: 500, Position: -12456
+Error 14389.00, Integral: 80999.00, Derivate: 1433.00, Output: 448162.00
+Setpoint: 500, Position: -13889
+Error 15818.00, Integral: 96817.00, Derivate: 1429.00, Output: 531539.00
+Setpoint: 500, Position: -15319
+Error 17225.00, Integral: 114042.00, Derivate: 1407.00, Output: 621885.00
+Setpoint: 500, Position: -16725
+Error 18623.00, Integral: 132665.00, Derivate: 1398.00, Output: 719194.00
+Setpoint: 500, Position: -18123
+Error 20025.00, Integral: 152690.00, Derivate: 1402.00, Output: 823525.00
+Setpoint: 500, Position: -19526
+Error 21433.00, Integral: 174123.00, Derivate: 1408.00, Output: 934914.00
+Setpoint: 500, Position: -20933
+Error 22852.00, Integral: 196975.00, Derivate: 1419.00, Output: 1053431.00
+Setpoint: 500, Position: -22353
+Error 24264.00, Integral: 221239.00, Derivate: 1412.00, Output: 1178987.00
+Setpoint: 500, Position: -23764
+Error 25675.00, Integral: 246914.00, Derivate: 1411.00, Output: 1311595.00
+Setpoint: 500, Position: -25176
+Error 27091.00, Integral: 274005.00, Derivate: 1416.00, Output: 1451298.00
+Setpoint: 500, Position: -26591
+Error 28496.00, Integral: 302501.00, Derivate: 1405.00, Output: 1597993.00
+Setpoint: 500, Position: -27996
+Error 29903.00, Integral: 332404.00, Derivate: 1407.00, Output: 1751729.00
+Setpoint: 500, Position: -29404
+Error 31320.00, Integral: 363724.00, Derivate: 1417.00, Output: 1912580.00
+Setpoint: 500, Position: -30821
+Error 32743.00, Integral: 396467.00, Derivate: 1423.00, Output: 2080564.00
+Setpoint: 500, Position: -32244
+Error 34158.00, Integral: 430625.00, Derivate: 1415.00, Output: 2255599.00
+Setpoint: 500, Position: -33658
+Error 35572.00, Integral: 466197.00, Derivate: 1414.00, Output: 2437701.00
+Setpoint: 500, Position: -35072
+Error 36984.00, Integral: 503181.00, Derivate: 1412.00, Output: 2626857.00
+Setpoint: 500, Position: -36485
+Error 38370.00, Integral: 541551.00, Derivate: 1386.00, Output: 2822865.00
+Setpoint: 500, Position: -37871
+Error 39756.00, Integral: 581307.00, Derivate: 1386.00, Output: 3025803.00
+Setpoint: 500, Position: -39257
+Error 41150.00, Integral: 622457.00, Derivate: 1394.00, Output: 3235735.00
+Setpoint: 500, Position: -40651
+Error 42548.00, Integral: 665005.00, Derivate: 1398.00, Output: 3452669.00
+Setpoint: 500, Position: -42049
+Error 43968.00, Integral: 708973.00, Derivate: 1420.00, Output: 3676769.00
+Setpoint: 500, Position: -43469
+Error 45382.00, Integral: 754355.00, Derivate: 1414.00, Output: 3907921.00
+Setpoint: 500, Position: -44882
+Error 46771.00, Integral: 801126.00, Derivate: 1389.00, Output: 4145943.00
+Setpoint: 500, Position: -46271
+Error 48157.00, Integral: 849283.00, Derivate: 1386.00, Output: 4390886.00
+Setpoint: 500, Position: -47657
+Error 49575.00, Integral: 898858.00, Derivate: 1418.00, Output: 4643015.00
+Setpoint: 500, Position: -49075
+Error 51002.00, Integral: 949860.00, Derivate: 1427.00, Output: 4902306.00
+Setpoint: 500, Position: -50503
+Error 52401.00, Integral: 1002261.00, Derivate: 1399.00, Output: 5168508.00
+Setpoint: 500, Position: -51901
+Error 53821.00, Integral: 1056082.00, Derivate: 1420.00, Output: 5441873.00
+Setpoint: 500, Position: -53321
+Error 55234.00, Integral: 1111316.00, Derivate: 1413.00, Output: 5722282.00
+Setpoint: 500, Position: -54734
+Error 56657.00, Integral: 1167973.00, Derivate: 1423.00, Output: 6009836.00
+Setpoint: 500, Position: -56157
+Error 58051.00, Integral: 1226024.00, Derivate: 1394.00, Output: 6304273.00
+Setpoint: 500, Position: -57551
+Error 59488.00, Integral: 1285512.00, Derivate: 1437.00, Output: 6606024.00
+Setpoint: 500, Position: -58989
+Error 60931.00, Integral: 1346443.00, Derivate: 1443.00, Output: 6915008.00
+Setpoint: 500, Position: -60432
+Error 62380.00, Integral: 1408823.00, Derivate: 1449.00, Output: 7231255.00
+Setpoint: 500, Position: -61881
+Error 63802.00, Integral: 1472625.00, Derivate: 1422.00, Output: 7554531.00
+Setpoint: 500, Position: -63303
+Error 65246.00, Integral: 1537871.00, Derivate: 1444.00, Output: 7885093.00
+Setpoint: 500, Position: -64746
+Error 66676.00, Integral: 1604547.00, Derivate: 1430.00, Output: 8222763.00
+Setpoint: 500, Position: -66176
+Error 68122.00, Integral: 1672669.00, Derivate: 1446.00, Output: 8567711.00
+Setpoint: 500, Position: -67622
+Error 69564.00, Integral: 1742233.00, Derivate: 1442.00, Output: 8919857.00
+Setpoint: 500, Position: -69064
+Error 70987.00, Integral: 1813220.00, Derivate: 1423.00, Output: 9279061.00
+Setpoint: 500, Position: -70487
+Error 72414.00, Integral: 1885634.00, Derivate: 1427.00, Output: 9645412.00
+Setpoint: 500, Position: -71915
+Error 73853.00, Integral: 1959487.00, Derivate: 1439.00, Output: 10018994.00
+Setpoint: 500, Position: -73354
+Error 75273.00, Integral: 2034760.00, Derivate: 1420.00, Output: 10399619.00
+Setpoint: 500, Position: -74773
+Error 76683.00, Integral: 2111443.00, Derivate: 1410.00, Output: 10787264.00
+Setpoint: 500, Position: -76184
+Error 78088.00, Integral: 2189531.00, Derivate: 1405.00, Output: 11181919.00
+Setpoint: 500, Position: -77588
+Error 79496.00, Integral: 2269027.00, Derivate: 1408.00, Output: 11583623.00
+Setpoint: 500, Position: -78996
+Error 80927.00, Integral: 2349954.00, Derivate: 1431.00, Output: 11992551.00
+Setpoint: 500, Position: -80428
+Error 82337.00, Integral: 2432291.00, Derivate: 1410.00, Output: 12408466.00
+Setpoint: 500, Position: -81837
+Error 83778.00, Integral: 2516069.00, Derivate: 1441.00, Output: 12831679.00
+Setpoint: 500, Position: -83279
+Error 85247.00, Integral: 2601316.00, Derivate: 1469.00, Output: 13262321.00
+Setpoint: 500, Position: -84747
+Error 86690.00, Integral: 2688006.00, Derivate: 1443.00, Output: 13700100.00
+Setpoint: 500, Position: -86191
+Error 88115.00, Integral: 2776121.00, Derivate: 1425.00, Output: 14144950.00
+Setpoint: 500, Position: -87616
+Error 89527.00, Integral: 2865648.00, Derivate: 1412.00, Output: 14596821.00
+Setpoint: 500, Position: -89027
+Error 90951.00, Integral: 2956599.00, Derivate: 1424.00, Output: 15055848.00
+Setpoint: 500, Position: -90451
+Error 92394.00, Integral: 3048993.00, Derivate: 1443.00, Output: 15522147.00
+Setpoint: 500, Position: -91895
+Error 93831.00, Integral: 3142824.00, Derivate: 1437.00, Output: 15995613.00
+Setpoint: 500, Position: -93332
+Error 95238.00, Integral: 3238062.00, Derivate: 1407.00, Output: 16476024.00
+Setpoint: 500, Position: -94738
+Error 96645.00, Integral: 3334707.00, Derivate: 1407.00, Output: 16963470.00
+Setpoint: 500, Position: -96146
+Error 98052.00, Integral: 3432759.00, Derivate: 1407.00, Output: 17457952.00
+Setpoint: 500, Position: -97552
+Error 99467.00, Integral: 3532226.00, Derivate: 1415.00, Output: 17959532.00
+Setpoint: 500, Position: -98967
+Error 100912.00, Integral: 3633138.00, Derivate: 1445.00, Output: 18468426.00
+Setpoint: 500, Position: -100412
+Error 102348.00, Integral: 3735486.00, Derivate: 1436.00, Output: 18984474.00
+Setpoint: 500, Position: -101849
+Error 103762.00, Integral: 3839248.00, Derivate: 1414.00, Output: 19507526.00
+Setpoint: 500, Position: -103263
+Error 105186.00, Integral: 3944434.00, Derivate: 1424.00, Output: 20037728.00
+Setpoint: 500, Position: -104687
+Error 106617.00, Integral: 4051051.00, Derivate: 1431.00, Output: 20575106.00
+Setpoint: 500, Position: -106118
+Error 108021.00, Integral: 4159072.00, Derivate: 1404.00, Output: 21119424.00
+Setpoint: 500, Position: -107521
+Error 109428.00, Integral: 4268500.00, Derivate: 1407.00, Output: 21670784.00
+Setpoint: 500, Position: -108928
+Error 110826.00, Integral: 4379326.00, Derivate: 1398.00, Output: 22229108.00
+Setpoint: 500, Position: -110327
+Error 112220.00, Integral: 4491546.00, Derivate: 1394.00, Output: 22794390.00
+Setpoint: 500, Position: -111721
+Error 113615.00, Integral: 4605161.00, Derivate: 1395.00, Output: 23366650.00
+Setpoint: 500, Position: -113115
+Error 115008.00, Integral: 4720169.00, Derivate: 1393.00, Output: 23945868.00
+Setpoint: 500, Position: -114508
+Error 116395.00, Integral: 4836564.00, Derivate: 1387.00, Output: 24532004.00
+Setpoint: 500, Position: -115896
+Error 117787.00, Integral: 4954351.00, Derivate: 1392.00, Output: 25125116.00
+Setpoint: 500, Position: -117288
+Error 119194.00, Integral: 5073545.00, Derivate: 1407.00, Output: 25725308.00
+Setpoint: 500, Position: -118695
+Error 120630.00, Integral: 5194175.00, Derivate: 1436.00, Output: 26332764.00
+Setpoint: 500, Position: -120131
+Error 122057.00, Integral: 5316232.00, Derivate: 1427.00, Output: 26947332.00
+Setpoint: 500, Position: -121557
