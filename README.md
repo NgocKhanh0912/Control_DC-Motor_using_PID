@@ -1,5 +1,3 @@
-Update: Currently, I have basically completed this capstone project 1. However, I need to fine-tune a few things and write a report to make it more polished.
-
 This project is the Capstone 1 project that I am working on in this semester 232. The project content is as follows: control the position and velocity of the DC motor JGB37-545 using PID algorithm and PWM technique. WinForm GUI will send parameters: control mode, PID parameters (KP, KI, KD), setpoint, stop_time, and start running to ESP32. 
 
 1. The data received from the GUI comes in 2 forms: "M...S...P...I...D...E...T" and "RUN".
